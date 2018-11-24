@@ -13,15 +13,15 @@ import jetbrains.mps.smodel.adapter.ids.MetaIdFactory;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 
-public class Time_Constraints extends BaseConstraintsDescriptor {
-  public Time_Constraints() {
-    super(MetaAdapterFactory.getConcept(0x1cb3be812ce745bcL, 0xb95047f9080cab09L, 0x6d92a9097486b17bL, "SoundLn.structure.Time"));
+public class SubTime_Constraints extends BaseConstraintsDescriptor {
+  public SubTime_Constraints() {
+    super(MetaAdapterFactory.getConcept(0x1cb3be812ce745bcL, 0xb95047f9080cab09L, 0x6d92a9097488481aL, "SoundLn.structure.SubTime"));
   }
 
   @Override
   protected Map<SProperty, PropertyConstraintsDescriptor> getSpecifiedProperties() {
     Map<SProperty, PropertyConstraintsDescriptor> properties = new HashMap<SProperty, PropertyConstraintsDescriptor>();
-    properties.put(MetaAdapterFactory.getProperty(0x1cb3be812ce745bcL, 0xb95047f9080cab09L, 0x6d92a9097486b17bL, 0x6d92a9097486b17cL, "hour"), new BasePropertyConstraintsDescriptor(MetaIdFactory.propId(0x1cb3be812ce745bcL, 0xb95047f9080cab09L, 0x6d92a9097486b17bL, 0x6d92a9097486b17cL), this) {
+    properties.put(MetaAdapterFactory.getProperty(0x1cb3be812ce745bcL, 0xb95047f9080cab09L, 0x6d92a9097488481aL, 0x6d92a9097488481dL, "hour"), new BasePropertyConstraintsDescriptor(MetaIdFactory.propId(0x1cb3be812ce745bcL, 0xb95047f9080cab09L, 0x6d92a9097488481aL, 0x6d92a9097488481dL), this) {
       @Override
       public boolean hasOwnValidator() {
         return true;
@@ -32,7 +32,7 @@ public class Time_Constraints extends BaseConstraintsDescriptor {
         return (SPropertyOperations.getInteger(propertyValue)) >= 0 && (SPropertyOperations.getInteger(propertyValue)) < 24;
       }
     });
-    properties.put(MetaAdapterFactory.getProperty(0x1cb3be812ce745bcL, 0xb95047f9080cab09L, 0x6d92a9097486b17bL, 0x6d92a9097486b17eL, "min"), new BasePropertyConstraintsDescriptor(MetaIdFactory.propId(0x1cb3be812ce745bcL, 0xb95047f9080cab09L, 0x6d92a9097486b17bL, 0x6d92a9097486b17eL), this) {
+    properties.put(MetaAdapterFactory.getProperty(0x1cb3be812ce745bcL, 0xb95047f9080cab09L, 0x6d92a9097488481aL, 0x6d92a9097488481fL, "min"), new BasePropertyConstraintsDescriptor(MetaIdFactory.propId(0x1cb3be812ce745bcL, 0xb95047f9080cab09L, 0x6d92a9097488481aL, 0x6d92a9097488481fL), this) {
       @Override
       public boolean hasOwnValidator() {
         return true;
@@ -43,7 +43,7 @@ public class Time_Constraints extends BaseConstraintsDescriptor {
         return (SPropertyOperations.getInteger(propertyValue)) >= 0 && (SPropertyOperations.getInteger(propertyValue)) < 60;
       }
     });
-    properties.put(MetaAdapterFactory.getProperty(0x1cb3be812ce745bcL, 0xb95047f9080cab09L, 0x6d92a9097486b17bL, 0x6d92a9097486b181L, "sec"), new BasePropertyConstraintsDescriptor(MetaIdFactory.propId(0x1cb3be812ce745bcL, 0xb95047f9080cab09L, 0x6d92a9097486b17bL, 0x6d92a9097486b181L), this) {
+    properties.put(MetaAdapterFactory.getProperty(0x1cb3be812ce745bcL, 0xb95047f9080cab09L, 0x6d92a9097488481aL, 0x6d92a90974884822L, "sec"), new BasePropertyConstraintsDescriptor(MetaIdFactory.propId(0x1cb3be812ce745bcL, 0xb95047f9080cab09L, 0x6d92a9097488481aL, 0x6d92a90974884822L), this) {
       @Override
       public boolean hasOwnValidator() {
         return true;

@@ -48,11 +48,11 @@
     </language>
   </registry>
   <node concept="24kQdi" id="6QiEg_Oxubx">
-    <ref role="1XX52x" to="6lg2:6QiEg_OxlCS" resolve="ContinuousCaptor" />
+    <ref role="1XX52x" to="6lg2:6QiEg_OxlCS" resolve="ContinuousSensor" />
     <node concept="3EZMnI" id="6QiEg_OxF9x" role="2wV5jI">
       <node concept="l2Vlx" id="6QiEg_OxF9y" role="2iSdaV" />
       <node concept="3F0ifn" id="6QiEg_OxF9z" role="3EZMnx">
-        <property role="3F0ifm" value="continuous captor" />
+        <property role="3F0ifm" value="continuous sensor" />
       </node>
       <node concept="3F0A7n" id="6QiEg_OxF9$" role="3EZMnx">
         <ref role="1NtTu8" to="6lg2:6QiEg_OxlCG" resolve="name" />
@@ -100,11 +100,11 @@
     </node>
   </node>
   <node concept="24kQdi" id="6QiEg_OxF6p">
-    <ref role="1XX52x" to="6lg2:6QiEg_OxlCK" resolve="ScheduledCaptor" />
+    <ref role="1XX52x" to="6lg2:6QiEg_OxlCK" resolve="ScheduledSensor" />
     <node concept="3EZMnI" id="6QiEg_OxF7r" role="2wV5jI">
       <node concept="l2Vlx" id="6QiEg_OxF7s" role="2iSdaV" />
       <node concept="3F0ifn" id="6QiEg_OxF7t" role="3EZMnx">
-        <property role="3F0ifm" value="scheduled captor" />
+        <property role="3F0ifm" value="scheduled sensor" />
       </node>
       <node concept="3F0A7n" id="6QiEg_OxF7u" role="3EZMnx">
         <ref role="1NtTu8" to="6lg2:6QiEg_OxlCG" resolve="name" />

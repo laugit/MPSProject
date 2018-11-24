@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dependenciesRoot>
-  <dependency className="SoundLn.editor.ContinuousCaptor_Editor" file="ContinuousCaptor_Editor.java">
-    <classNode dependClassName="SoundLn.editor.ContinuousCaptor_EditorBuilder_a" />
+  <dependency className="SoundLn.editor.ContinuousSensor_Editor" file="ContinuousSensor_Editor.java">
+    <classNode dependClassName="SoundLn.editor.ContinuousSensor_EditorBuilder_a" />
     <classNode dependClassName="jetbrains.mps.openapi.editor.EditorContext" />
     <classNode dependClassName="jetbrains.mps.openapi.editor.cells.EditorCell" />
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.nodeEditor.DefaultNodeEditor" />
   </dependency>
-  <dependency className="SoundLn.editor.ContinuousCaptor_EditorBuilder_a" file="ContinuousCaptor_EditorBuilder_a.java">
+  <dependency className="SoundLn.editor.ContinuousSensor_EditorBuilder_a" file="ContinuousSensor_EditorBuilder_a.java">
     <classNode dependClassName="java.lang.Iterable" />
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.util.Objects" />
@@ -50,8 +50,8 @@
     <classNode extendsClassName="jetbrains.mps.editor.runtime.descriptor.AbstractEditorBuilder" />
   </dependency>
   <dependency className="SoundLn.editor.EditorAspectDescriptorImpl" file="EditorAspectDescriptorImpl.java">
-    <classNode dependClassName="SoundLn.editor.ContinuousCaptor_Editor" />
-    <classNode dependClassName="SoundLn.editor.ScheduledCaptor_Editor" />
+    <classNode dependClassName="SoundLn.editor.ContinuousSensor_Editor" />
+    <classNode dependClassName="SoundLn.editor.ScheduledSensor_Editor" />
     <classNode dependClassName="java.util.Collection" />
     <classNode dependClassName="java.util.Collections" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.ConceptSwitchIndex" />
@@ -62,14 +62,14 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.language.SAbstractConcept" />
     <classNode extendsClassName="jetbrains.mps.nodeEditor.EditorAspectDescriptorBase" />
   </dependency>
-  <dependency className="SoundLn.editor.ScheduledCaptor_Editor" file="ScheduledCaptor_Editor.java">
-    <classNode dependClassName="SoundLn.editor.ScheduledCaptor_EditorBuilder_a" />
+  <dependency className="SoundLn.editor.ScheduledSensor_Editor" file="ScheduledSensor_Editor.java">
+    <classNode dependClassName="SoundLn.editor.ScheduledSensor_EditorBuilder_a" />
     <classNode dependClassName="jetbrains.mps.openapi.editor.EditorContext" />
     <classNode dependClassName="jetbrains.mps.openapi.editor.cells.EditorCell" />
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.nodeEditor.DefaultNodeEditor" />
   </dependency>
-  <dependency className="SoundLn.editor.ScheduledCaptor_EditorBuilder_a" file="ScheduledCaptor_EditorBuilder_a.java">
+  <dependency className="SoundLn.editor.ScheduledSensor_EditorBuilder_a" file="ScheduledSensor_EditorBuilder_a.java">
     <classNode dependClassName="java.lang.Iterable" />
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.util.Objects" />

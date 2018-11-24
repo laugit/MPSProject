@@ -7,8 +7,8 @@ import jetbrains.mps.openapi.editor.cells.EditorCell;
 import jetbrains.mps.openapi.editor.EditorContext;
 import org.jetbrains.mps.openapi.model.SNode;
 
-public class ScheduledCaptor_Editor extends DefaultNodeEditor {
+public class ScheduledSensor_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new ScheduledCaptor_EditorBuilder_a(editorContext, node).createCell();
+    return new ScheduledSensor_EditorBuilder_a(editorContext, node).createCell();
   }
 }

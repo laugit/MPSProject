@@ -9,11 +9,12 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.runtime.ConceptPresentationBuilder;
 
 public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase {
-  private ConceptPresentation props_Captor;
-  private ConceptPresentation props_ContinuousCaptor;
+  private ConceptPresentation props_ContinuousSensor;
   private ConceptPresentation props_Event;
-  private ConceptPresentation props_ScheduledCaptor;
+  private ConceptPresentation props_ScheduledSensor;
+  private ConceptPresentation props_Sensor;
   private ConceptPresentation props_SoundDetector;
+  private ConceptPresentation props_SubTime;
   private ConceptPresentation props_Time;
 
   @Override
@@ -21,20 +22,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   public ConceptPresentation getDescriptor(SAbstractConcept c) {
     StructureAspectDescriptor structureDescriptor = (StructureAspectDescriptor) myLanguageRuntime.getAspect(jetbrains.mps.smodel.runtime.StructureAspectDescriptor.class);
     switch (structureDescriptor.internalIndex(c)) {
-      case LanguageConceptSwitch.Captor:
-        if (props_Captor == null) {
+      case LanguageConceptSwitch.ContinuousSensor:
+        if (props_ContinuousSensor == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("captor");
-          props_Captor = cpb.create();
+          cpb.rawPresentation("continuous sensor");
+          props_ContinuousSensor = cpb.create();
         }
-        return props_Captor;
-      case LanguageConceptSwitch.ContinuousCaptor:
-        if (props_ContinuousCaptor == null) {
-          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("continuous captor");
-          props_ContinuousCaptor = cpb.create();
-        }
-        return props_ContinuousCaptor;
+        return props_ContinuousSensor;
       case LanguageConceptSwitch.Event:
         if (props_Event == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -42,13 +36,20 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_Event = cpb.create();
         }
         return props_Event;
-      case LanguageConceptSwitch.ScheduledCaptor:
-        if (props_ScheduledCaptor == null) {
+      case LanguageConceptSwitch.ScheduledSensor:
+        if (props_ScheduledSensor == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("scheduled captor");
-          props_ScheduledCaptor = cpb.create();
+          cpb.rawPresentation("scheduled sensor");
+          props_ScheduledSensor = cpb.create();
         }
-        return props_ScheduledCaptor;
+        return props_ScheduledSensor;
+      case LanguageConceptSwitch.Sensor:
+        if (props_Sensor == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("sensor");
+          props_Sensor = cpb.create();
+        }
+        return props_Sensor;
       case LanguageConceptSwitch.SoundDetector:
         if (props_SoundDetector == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -56,6 +57,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_SoundDetector = cpb.create();
         }
         return props_SoundDetector;
+      case LanguageConceptSwitch.SubTime:
+        if (props_SubTime == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("sub time");
+          props_SubTime = cpb.create();
+        }
+        return props_SubTime;
       case LanguageConceptSwitch.Time:
         if (props_Time == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
