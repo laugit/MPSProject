@@ -11,15 +11,19 @@ public final class LanguageConceptSwitch {
   private final LanguageConceptIndex myIndex;
   public static final int Captor = 0;
   public static final int ContinuousCaptor = 1;
-  public static final int ScheduledCaptor = 2;
-  public static final int SoundDetector = 3;
+  public static final int Event = 2;
+  public static final int ScheduledCaptor = 3;
+  public static final int SoundDetector = 4;
+  public static final int Time = 5;
 
   public LanguageConceptSwitch() {
     LanguageConceptIndexBuilder builder = new LanguageConceptIndexBuilder(0x1cb3be812ce745bcL, 0xb95047f9080cab09L);
     builder.put(0x6d92a90974855a2bL, Captor);
     builder.put(0x6d92a90974855a38L, ContinuousCaptor);
+    builder.put(0x6d92a9097485f4c0L, Event);
     builder.put(0x6d92a90974855a30L, ScheduledCaptor);
     builder.put(0x6d92a90974855a2aL, SoundDetector);
+    builder.put(0x6d92a9097486b17bL, Time);
     myIndex = builder.seal();
   }
 

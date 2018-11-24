@@ -74,18 +74,64 @@
       <property role="TrG5h" value="name" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
+    <node concept="1TJgyj" id="6QiEg_Oxvj3" role="1TKVEi">
+      <property role="IQ2ns" value="7895558954808636611" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="events" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="6QiEg_Oxvj0" resolve="Event" />
+    </node>
   </node>
   <node concept="1TIwiD" id="6QiEg_OxlCK">
     <property role="EcuMT" value="7895558954808597040" />
     <property role="TrG5h" value="ScheduledCaptor" />
     <property role="34LRSv" value="scheduled captor" />
     <ref role="1TJDcQ" node="6QiEg_OxlCF" resolve="Captor" />
+    <node concept="1TJgyj" id="6QiEg_OxF65" role="1TKVEi">
+      <property role="IQ2ns" value="7895558954808684933" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="times" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="6QiEg_OxF5V" resolve="Time" />
+    </node>
   </node>
   <node concept="1TIwiD" id="6QiEg_OxlCS">
     <property role="EcuMT" value="7895558954808597048" />
     <property role="TrG5h" value="ContinuousCaptor" />
     <property role="34LRSv" value="continuous captor" />
     <ref role="1TJDcQ" node="6QiEg_OxlCF" resolve="Captor" />
+  </node>
+  <node concept="1TIwiD" id="6QiEg_Oxvj0">
+    <property role="EcuMT" value="7895558954808636608" />
+    <property role="TrG5h" value="Event" />
+    <property role="34LRSv" value="event" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="6QiEg_Oxvj1" role="1TKVEl">
+      <property role="IQ2nx" value="7895558954808636609" />
+      <property role="TrG5h" value="name" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6QiEg_OxF5V">
+    <property role="EcuMT" value="7895558954808684923" />
+    <property role="TrG5h" value="Time" />
+    <property role="34LRSv" value="at time" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="6QiEg_OxF5W" role="1TKVEl">
+      <property role="IQ2nx" value="7895558954808684924" />
+      <property role="TrG5h" value="hour" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+    <node concept="1TJgyi" id="6QiEg_OxF5Y" role="1TKVEl">
+      <property role="IQ2nx" value="7895558954808684926" />
+      <property role="TrG5h" value="min" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+    <node concept="1TJgyi" id="6QiEg_OxF61" role="1TKVEl">
+      <property role="IQ2nx" value="7895558954808684929" />
+      <property role="TrG5h" value="sec" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
   </node>
 </model>
 

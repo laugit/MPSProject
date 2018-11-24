@@ -21,17 +21,14 @@
   </registry>
   <node concept="p5Zcz" id="6QiEg_OxlP0">
     <property role="p5ZcB" value="detector" />
-    <node concept="p5ZcT" id="6QiEg_OxlP1" role="p5ZcS">
-      <property role="p5Zc_" value="captor1" />
+    <node concept="p5ZcT" id="6QiEg_OxA2E" role="p5ZcS">
+      <property role="p5Zc_" value="w" />
     </node>
     <node concept="p5ZcT" id="6QiEg_OxlP3" role="p5ZcS">
       <property role="p5Zc_" value="captor2" />
     </node>
-    <node concept="p5ZcL" id="6QiEg_OxlP6" role="p5ZcW">
+    <node concept="p5ZcL" id="6QiEg_OxGUP" role="p5ZcW">
       <property role="p5Zc_" value="captor3" />
-    </node>
-    <node concept="p5ZcL" id="6QiEg_OxlP8" role="p5ZcW">
-      <property role="p5Zc_" value="captor4" />
     </node>
   </node>
 </model>

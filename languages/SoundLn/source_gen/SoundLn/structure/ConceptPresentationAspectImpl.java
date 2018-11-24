@@ -11,8 +11,10 @@ import jetbrains.mps.smodel.runtime.ConceptPresentationBuilder;
 public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase {
   private ConceptPresentation props_Captor;
   private ConceptPresentation props_ContinuousCaptor;
+  private ConceptPresentation props_Event;
   private ConceptPresentation props_ScheduledCaptor;
   private ConceptPresentation props_SoundDetector;
+  private ConceptPresentation props_Time;
 
   @Override
   @Nullable
@@ -33,6 +35,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_ContinuousCaptor = cpb.create();
         }
         return props_ContinuousCaptor;
+      case LanguageConceptSwitch.Event:
+        if (props_Event == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("event");
+          props_Event = cpb.create();
+        }
+        return props_Event;
       case LanguageConceptSwitch.ScheduledCaptor:
         if (props_ScheduledCaptor == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -47,6 +56,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_SoundDetector = cpb.create();
         }
         return props_SoundDetector;
+      case LanguageConceptSwitch.Time:
+        if (props_Time == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("at time");
+          props_Time = cpb.create();
+        }
+        return props_Time;
     }
     return null;
   }

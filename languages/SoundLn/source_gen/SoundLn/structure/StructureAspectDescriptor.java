@@ -14,8 +14,10 @@ import jetbrains.mps.smodel.runtime.impl.ConceptDescriptorBuilder2;
 public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptCaptor = createDescriptorForCaptor();
   /*package*/ final ConceptDescriptor myConceptContinuousCaptor = createDescriptorForContinuousCaptor();
+  /*package*/ final ConceptDescriptor myConceptEvent = createDescriptorForEvent();
   /*package*/ final ConceptDescriptor myConceptScheduledCaptor = createDescriptorForScheduledCaptor();
   /*package*/ final ConceptDescriptor myConceptSoundDetector = createDescriptorForSoundDetector();
+  /*package*/ final ConceptDescriptor myConceptTime = createDescriptorForTime();
   private final LanguageConceptSwitch myIndexSwitch;
 
   public StructureAspectDescriptor() {
@@ -24,7 +26,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptCaptor, myConceptContinuousCaptor, myConceptScheduledCaptor, myConceptSoundDetector);
+    return Arrays.asList(myConceptCaptor, myConceptContinuousCaptor, myConceptEvent, myConceptScheduledCaptor, myConceptSoundDetector, myConceptTime);
   }
 
   @Override
@@ -35,10 +37,14 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
         return myConceptCaptor;
       case LanguageConceptSwitch.ContinuousCaptor:
         return myConceptContinuousCaptor;
+      case LanguageConceptSwitch.Event:
+        return myConceptEvent;
       case LanguageConceptSwitch.ScheduledCaptor:
         return myConceptScheduledCaptor;
       case LanguageConceptSwitch.SoundDetector:
         return myConceptSoundDetector;
+      case LanguageConceptSwitch.Time:
+        return myConceptTime;
       default:
         return null;
     }
@@ -54,6 +60,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.origin("r:b5550555-b3bc-4782-a6c7-5f089d01e8cd(SoundLn.structure)/7895558954808597035");
     b.version(2);
     b.prop("name", 0x6d92a90974855a2cL, "7895558954808597036");
+    b.aggregate("events", 0x6d92a9097485f4c3L).target(0x1cb3be812ce745bcL, 0xb95047f9080cab09L, 0x6d92a9097485f4c0L).optional(true).ordered(true).multiple(true).origin("7895558954808636611").done();
     b.alias("captor");
     return b.create();
   }
@@ -66,12 +73,22 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.alias("continuous captor");
     return b.create();
   }
+  private static ConceptDescriptor createDescriptorForEvent() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("SoundLn", "Event", 0x1cb3be812ce745bcL, 0xb95047f9080cab09L, 0x6d92a9097485f4c0L);
+    b.class_(false, false, false);
+    b.origin("r:b5550555-b3bc-4782-a6c7-5f089d01e8cd(SoundLn.structure)/7895558954808636608");
+    b.version(2);
+    b.prop("name", 0x6d92a9097485f4c1L, "7895558954808636609");
+    b.alias("event");
+    return b.create();
+  }
   private static ConceptDescriptor createDescriptorForScheduledCaptor() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("SoundLn", "ScheduledCaptor", 0x1cb3be812ce745bcL, 0xb95047f9080cab09L, 0x6d92a90974855a30L);
     b.class_(false, false, false);
     b.super_("SoundLn.structure.Captor", 0x1cb3be812ce745bcL, 0xb95047f9080cab09L, 0x6d92a90974855a2bL);
     b.origin("r:b5550555-b3bc-4782-a6c7-5f089d01e8cd(SoundLn.structure)/7895558954808597040");
     b.version(2);
+    b.aggregate("times", 0x6d92a9097486b185L).target(0x1cb3be812ce745bcL, 0xb95047f9080cab09L, 0x6d92a9097486b17bL).optional(true).ordered(true).multiple(true).origin("7895558954808684933").done();
     b.alias("scheduled captor");
     return b.create();
   }
@@ -84,6 +101,17 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.aggregate("scheduledcaptors", 0x6d92a90974855a31L).target(0x1cb3be812ce745bcL, 0xb95047f9080cab09L, 0x6d92a90974855a30L).optional(true).ordered(true).multiple(true).origin("7895558954808597041").done();
     b.aggregate("continuouscaptors", 0x6d92a90974855a35L).target(0x1cb3be812ce745bcL, 0xb95047f9080cab09L, 0x6d92a90974855a38L).optional(true).ordered(true).multiple(true).origin("7895558954808597045").done();
     b.alias("sound detector");
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForTime() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("SoundLn", "Time", 0x1cb3be812ce745bcL, 0xb95047f9080cab09L, 0x6d92a9097486b17bL);
+    b.class_(false, false, false);
+    b.origin("r:b5550555-b3bc-4782-a6c7-5f089d01e8cd(SoundLn.structure)/7895558954808684923");
+    b.version(2);
+    b.prop("hour", 0x6d92a9097486b17cL, "7895558954808684924");
+    b.prop("min", 0x6d92a9097486b17eL, "7895558954808684926");
+    b.prop("sec", 0x6d92a9097486b181L, "7895558954808684929");
+    b.alias("at time");
     return b.create();
   }
 }
