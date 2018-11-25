@@ -130,8 +130,8 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.origin("r:b5550555-b3bc-4782-a6c7-5f089d01e8cd(SoundLn.structure)/7895558954808636608");
     b.version(2);
     b.prop("name", 0x6d92a9097485f4c1L, "7895558954808636609");
-    b.aggregate("condition", 0x247d975d2965656L).target(0x1cb3be812ce745bcL, 0xb95047f9080cab09L, 0x247d975d2965655L).optional(true).ordered(true).multiple(false).origin("164339011489781334").done();
-    b.aggregate("action", 0x247d975d2965676L).target(0x1cb3be812ce745bcL, 0xb95047f9080cab09L, 0x247d975d2965675L).optional(true).ordered(true).multiple(false).origin("164339011489781366").done();
+    b.aggregate("condition", 0x247d975d2965656L).target(0x1cb3be812ce745bcL, 0xb95047f9080cab09L, 0x247d975d2965655L).optional(true).ordered(true).multiple(true).origin("164339011489781334").done();
+    b.aggregate("action", 0x247d975d2965676L).target(0x1cb3be812ce745bcL, 0xb95047f9080cab09L, 0x247d975d2965675L).optional(true).ordered(true).multiple(true).origin("164339011489781366").done();
     b.alias("event");
     return b.create();
   }

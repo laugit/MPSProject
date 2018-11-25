@@ -115,12 +115,14 @@
       <property role="IQ2ns" value="164339011489781334" />
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="condition" />
+      <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="97Qnni__pl" resolve="Conditional" />
     </node>
     <node concept="1TJgyj" id="97Qnni__pQ" role="1TKVEi">
       <property role="IQ2ns" value="164339011489781366" />
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="action" />
+      <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="97Qnni__pP" resolve="Action" />
     </node>
   </node>
