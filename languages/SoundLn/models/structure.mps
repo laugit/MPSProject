@@ -111,6 +111,18 @@
       <property role="TrG5h" value="name" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
+    <node concept="1TJgyj" id="97Qnni__pm" role="1TKVEi">
+      <property role="IQ2ns" value="164339011489781334" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="condition" />
+      <ref role="20lvS9" node="97Qnni__pl" resolve="Conditional" />
+    </node>
+    <node concept="1TJgyj" id="97Qnni__pQ" role="1TKVEi">
+      <property role="IQ2ns" value="164339011489781366" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="action" />
+      <ref role="20lvS9" node="97Qnni__pP" resolve="Action" />
+    </node>
   </node>
   <node concept="1TIwiD" id="6QiEg_OxF5V">
     <property role="EcuMT" value="7895558954808684923" />
@@ -152,6 +164,76 @@
       <property role="TrG5h" value="sec" />
       <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
     </node>
+  </node>
+  <node concept="1TIwiD" id="97Qnni__pl">
+    <property role="EcuMT" value="164339011489781333" />
+    <property role="TrG5h" value="Conditional" />
+    <property role="34LRSv" value="if" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="97Qnni__pF" role="1TKVEi">
+      <property role="IQ2ns" value="164339011489781355" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="ifCond" />
+      <ref role="20lvS9" node="97Qnni__pB" resolve="BooleanExpr" />
+    </node>
+    <node concept="1TJgyj" id="97Qnni__pV" role="1TKVEi">
+      <property role="IQ2ns" value="164339011489781371" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="action1" />
+      <ref role="20lvS9" node="97Qnni__pP" resolve="Action" />
+    </node>
+    <node concept="1TJgyj" id="97QnniB2av" role="1TKVEi">
+      <property role="IQ2ns" value="164339011490161311" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="action2" />
+      <ref role="20lvS9" node="97Qnni__pP" resolve="Action" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="97Qnni__pB">
+    <property role="EcuMT" value="164339011489781351" />
+    <property role="TrG5h" value="BooleanExpr" />
+    <property role="34LRSv" value="bool" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+  </node>
+  <node concept="1TIwiD" id="97Qnni__pC">
+    <property role="EcuMT" value="164339011489781352" />
+    <property role="TrG5h" value="LegalLevelCondition" />
+    <property role="34LRSv" value="has legal level" />
+    <ref role="1TJDcQ" node="97Qnni__pB" resolve="BooleanExpr" />
+  </node>
+  <node concept="1TIwiD" id="97Qnni__pP">
+    <property role="EcuMT" value="164339011489781365" />
+    <property role="TrG5h" value="Action" />
+    <property role="34LRSv" value="do" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="97QnniB5DR" role="1TKVEl">
+      <property role="IQ2nx" value="164339011490175607" />
+      <property role="TrG5h" value="do" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="97Qnni__pZ">
+    <property role="EcuMT" value="164339011489781375" />
+    <property role="TrG5h" value="LegalLevelSetter" />
+    <property role="34LRSv" value="set legal level" />
+    <ref role="1TJDcQ" node="97Qnni__pP" resolve="Action" />
+    <node concept="1TJgyi" id="97Qnni__q0" role="1TKVEl">
+      <property role="IQ2nx" value="164339011489781376" />
+      <property role="TrG5h" value="level" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="97QnniE6N8">
+    <property role="EcuMT" value="164339011490966728" />
+    <property role="TrG5h" value="RingAlarm" />
+    <property role="34LRSv" value="ring alarm" />
+    <ref role="1TJDcQ" node="97Qnni__pP" resolve="Action" />
+  </node>
+  <node concept="1TIwiD" id="97QnniE6Nt">
+    <property role="EcuMT" value="164339011490966749" />
+    <property role="TrG5h" value="DesactivateAlarm" />
+    <property role="34LRSv" value="desactivate alarm" />
+    <ref role="1TJDcQ" node="97Qnni__pP" resolve="Action" />
   </node>
 </model>
 

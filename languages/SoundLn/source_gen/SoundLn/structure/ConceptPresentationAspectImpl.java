@@ -9,8 +9,15 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.runtime.ConceptPresentationBuilder;
 
 public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase {
+  private ConceptPresentation props_Action;
+  private ConceptPresentation props_BooleanExpr;
+  private ConceptPresentation props_Conditional;
   private ConceptPresentation props_ContinuousSensor;
+  private ConceptPresentation props_DesactivateAlarm;
   private ConceptPresentation props_Event;
+  private ConceptPresentation props_LegalLevelCondition;
+  private ConceptPresentation props_LegalLevelSetter;
+  private ConceptPresentation props_RingAlarm;
   private ConceptPresentation props_ScheduledSensor;
   private ConceptPresentation props_Sensor;
   private ConceptPresentation props_SoundDetector;
@@ -22,6 +29,27 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   public ConceptPresentation getDescriptor(SAbstractConcept c) {
     StructureAspectDescriptor structureDescriptor = (StructureAspectDescriptor) myLanguageRuntime.getAspect(jetbrains.mps.smodel.runtime.StructureAspectDescriptor.class);
     switch (structureDescriptor.internalIndex(c)) {
+      case LanguageConceptSwitch.Action:
+        if (props_Action == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("do");
+          props_Action = cpb.create();
+        }
+        return props_Action;
+      case LanguageConceptSwitch.BooleanExpr:
+        if (props_BooleanExpr == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("bool");
+          props_BooleanExpr = cpb.create();
+        }
+        return props_BooleanExpr;
+      case LanguageConceptSwitch.Conditional:
+        if (props_Conditional == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("if");
+          props_Conditional = cpb.create();
+        }
+        return props_Conditional;
       case LanguageConceptSwitch.ContinuousSensor:
         if (props_ContinuousSensor == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -29,6 +57,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_ContinuousSensor = cpb.create();
         }
         return props_ContinuousSensor;
+      case LanguageConceptSwitch.DesactivateAlarm:
+        if (props_DesactivateAlarm == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("desactivate alarm");
+          props_DesactivateAlarm = cpb.create();
+        }
+        return props_DesactivateAlarm;
       case LanguageConceptSwitch.Event:
         if (props_Event == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -36,6 +71,27 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_Event = cpb.create();
         }
         return props_Event;
+      case LanguageConceptSwitch.LegalLevelCondition:
+        if (props_LegalLevelCondition == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("has legal level");
+          props_LegalLevelCondition = cpb.create();
+        }
+        return props_LegalLevelCondition;
+      case LanguageConceptSwitch.LegalLevelSetter:
+        if (props_LegalLevelSetter == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("set legal level");
+          props_LegalLevelSetter = cpb.create();
+        }
+        return props_LegalLevelSetter;
+      case LanguageConceptSwitch.RingAlarm:
+        if (props_RingAlarm == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("ring alarm");
+          props_RingAlarm = cpb.create();
+        }
+        return props_RingAlarm;
       case LanguageConceptSwitch.ScheduledSensor:
         if (props_ScheduledSensor == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();

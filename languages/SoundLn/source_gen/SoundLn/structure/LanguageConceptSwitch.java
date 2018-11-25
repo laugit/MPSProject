@@ -9,18 +9,32 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 
 public final class LanguageConceptSwitch {
   private final LanguageConceptIndex myIndex;
-  public static final int ContinuousSensor = 0;
-  public static final int Event = 1;
-  public static final int ScheduledSensor = 2;
-  public static final int Sensor = 3;
-  public static final int SoundDetector = 4;
-  public static final int SubTime = 5;
-  public static final int Time = 6;
+  public static final int Action = 0;
+  public static final int BooleanExpr = 1;
+  public static final int Conditional = 2;
+  public static final int ContinuousSensor = 3;
+  public static final int DesactivateAlarm = 4;
+  public static final int Event = 5;
+  public static final int LegalLevelCondition = 6;
+  public static final int LegalLevelSetter = 7;
+  public static final int RingAlarm = 8;
+  public static final int ScheduledSensor = 9;
+  public static final int Sensor = 10;
+  public static final int SoundDetector = 11;
+  public static final int SubTime = 12;
+  public static final int Time = 13;
 
   public LanguageConceptSwitch() {
     LanguageConceptIndexBuilder builder = new LanguageConceptIndexBuilder(0x1cb3be812ce745bcL, 0xb95047f9080cab09L);
+    builder.put(0x247d975d2965675L, Action);
+    builder.put(0x247d975d2965667L, BooleanExpr);
+    builder.put(0x247d975d2965655L, Conditional);
     builder.put(0x6d92a90974855a38L, ContinuousSensor);
+    builder.put(0x247d975d2a86cddL, DesactivateAlarm);
     builder.put(0x6d92a9097485f4c0L, Event);
+    builder.put(0x247d975d2965668L, LegalLevelCondition);
+    builder.put(0x247d975d296567fL, LegalLevelSetter);
+    builder.put(0x247d975d2a86cc8L, RingAlarm);
     builder.put(0x6d92a90974855a30L, ScheduledSensor);
     builder.put(0x6d92a90974855a2bL, Sensor);
     builder.put(0x6d92a90974855a2aL, SoundDetector);

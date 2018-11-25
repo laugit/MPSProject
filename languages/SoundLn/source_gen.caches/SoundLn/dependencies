@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dependenciesRoot>
   <dependency className="SoundLn.Language" file="Language.java">
+    <classNode dependClassName="SoundLn.actions.ActionAspectDescriptorImpl" />
     <classNode dependClassName="SoundLn.behavior.BehaviorAspectDescriptor" />
     <classNode dependClassName="SoundLn.constraints.ConstraintsAspectDescriptor" />
     <classNode dependClassName="SoundLn.editor.EditorAspectDescriptorImpl" />
@@ -12,6 +13,7 @@
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="java.util.Collection" />
     <classNode dependClassName="jetbrains.mps.lang.typesystem.runtime.IHelginsDescriptor" />
+    <classNode dependClassName="jetbrains.mps.openapi.actions.descriptor.ActionAspectDescriptor" />
     <classNode dependClassName="jetbrains.mps.openapi.editor.descriptor.EditorAspectDescriptor" />
     <classNode dependClassName="jetbrains.mps.smodel.adapter.ids.SLanguageId" />
     <classNode dependClassName="jetbrains.mps.smodel.runtime.BehaviorAspectDescriptor" />
