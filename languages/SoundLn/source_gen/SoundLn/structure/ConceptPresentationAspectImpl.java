@@ -10,19 +10,31 @@ import jetbrains.mps.smodel.runtime.ConceptPresentationBuilder;
 
 public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase {
   private ConceptPresentation props_Action;
-  private ConceptPresentation props_BooleanExpr;
+  private ConceptPresentation props_Alert;
+  private ConceptPresentation props_Area;
+  private ConceptPresentation props_Condition;
   private ConceptPresentation props_Conditional;
-  private ConceptPresentation props_ContinuousSensor;
-  private ConceptPresentation props_DesactivateAlarm;
+  private ConceptPresentation props_DataLifeTime;
+  private ConceptPresentation props_DataStoragePolicy;
   private ConceptPresentation props_Event;
-  private ConceptPresentation props_LegalLevelCondition;
-  private ConceptPresentation props_LegalLevelSetter;
-  private ConceptPresentation props_RingAlarm;
-  private ConceptPresentation props_ScheduledSensor;
+  private ConceptPresentation props_Events;
+  private ConceptPresentation props_GeneratesEvent;
+  private ConceptPresentation props_Policies;
+  private ConceptPresentation props_PoliciesKeyWord;
+  private ConceptPresentation props_Position;
+  private ConceptPresentation props_Reaction;
+  private ConceptPresentation props_Recording;
+  private ConceptPresentation props_Rule;
+  private ConceptPresentation props_Sensibility;
   private ConceptPresentation props_Sensor;
-  private ConceptPresentation props_SoundDetector;
-  private ConceptPresentation props_SubTime;
-  private ConceptPresentation props_Time;
+  private ConceptPresentation props_Sensors;
+  private ConceptPresentation props_SoundRecordingPolicy;
+  private ConceptPresentation props_SoundRecordingSolution;
+  private ConceptPresentation props_Storage;
+  private ConceptPresentation props_Trigger;
+  private ConceptPresentation props_Type;
+  private ConceptPresentation props_Zone;
+  private ConceptPresentation props_Zones;
 
   @Override
   @Nullable
@@ -36,13 +48,27 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_Action = cpb.create();
         }
         return props_Action;
-      case LanguageConceptSwitch.BooleanExpr:
-        if (props_BooleanExpr == null) {
+      case LanguageConceptSwitch.Alert:
+        if (props_Alert == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("bool");
-          props_BooleanExpr = cpb.create();
+          cpb.rawPresentation("alert");
+          props_Alert = cpb.create();
         }
-        return props_BooleanExpr;
+        return props_Alert;
+      case LanguageConceptSwitch.Area:
+        if (props_Area == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("area");
+          props_Area = cpb.create();
+        }
+        return props_Area;
+      case LanguageConceptSwitch.Condition:
+        if (props_Condition == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("condition");
+          props_Condition = cpb.create();
+        }
+        return props_Condition;
       case LanguageConceptSwitch.Conditional:
         if (props_Conditional == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -50,20 +76,20 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_Conditional = cpb.create();
         }
         return props_Conditional;
-      case LanguageConceptSwitch.ContinuousSensor:
-        if (props_ContinuousSensor == null) {
+      case LanguageConceptSwitch.DataLifeTime:
+        if (props_DataLifeTime == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("continuous sensor");
-          props_ContinuousSensor = cpb.create();
+          cpb.rawPresentation("dataLifeTime");
+          props_DataLifeTime = cpb.create();
         }
-        return props_ContinuousSensor;
-      case LanguageConceptSwitch.DesactivateAlarm:
-        if (props_DesactivateAlarm == null) {
+        return props_DataLifeTime;
+      case LanguageConceptSwitch.DataStoragePolicy:
+        if (props_DataStoragePolicy == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("desactivate alarm");
-          props_DesactivateAlarm = cpb.create();
+          cpb.rawPresentation("dataStoragePolicy");
+          props_DataStoragePolicy = cpb.create();
         }
-        return props_DesactivateAlarm;
+        return props_DataStoragePolicy;
       case LanguageConceptSwitch.Event:
         if (props_Event == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -71,34 +97,69 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_Event = cpb.create();
         }
         return props_Event;
-      case LanguageConceptSwitch.LegalLevelCondition:
-        if (props_LegalLevelCondition == null) {
+      case LanguageConceptSwitch.Events:
+        if (props_Events == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("has legal level");
-          props_LegalLevelCondition = cpb.create();
+          cpb.rawPresentation("events");
+          props_Events = cpb.create();
         }
-        return props_LegalLevelCondition;
-      case LanguageConceptSwitch.LegalLevelSetter:
-        if (props_LegalLevelSetter == null) {
+        return props_Events;
+      case LanguageConceptSwitch.GeneratesEvent:
+        if (props_GeneratesEvent == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("set legal level");
-          props_LegalLevelSetter = cpb.create();
+          cpb.rawPresentation("generates event");
+          props_GeneratesEvent = cpb.create();
         }
-        return props_LegalLevelSetter;
-      case LanguageConceptSwitch.RingAlarm:
-        if (props_RingAlarm == null) {
+        return props_GeneratesEvent;
+      case LanguageConceptSwitch.Policies:
+        if (props_Policies == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("ring alarm");
-          props_RingAlarm = cpb.create();
+          cpb.rawPresentation("policies");
+          props_Policies = cpb.create();
         }
-        return props_RingAlarm;
-      case LanguageConceptSwitch.ScheduledSensor:
-        if (props_ScheduledSensor == null) {
+        return props_Policies;
+      case LanguageConceptSwitch.PoliciesKeyWord:
+        if (props_PoliciesKeyWord == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("scheduled sensor");
-          props_ScheduledSensor = cpb.create();
+          cpb.rawPresentation("policies");
+          props_PoliciesKeyWord = cpb.create();
         }
-        return props_ScheduledSensor;
+        return props_PoliciesKeyWord;
+      case LanguageConceptSwitch.Position:
+        if (props_Position == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("position");
+          props_Position = cpb.create();
+        }
+        return props_Position;
+      case LanguageConceptSwitch.Reaction:
+        if (props_Reaction == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("reaction");
+          props_Reaction = cpb.create();
+        }
+        return props_Reaction;
+      case LanguageConceptSwitch.Recording:
+        if (props_Recording == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("recording");
+          props_Recording = cpb.create();
+        }
+        return props_Recording;
+      case LanguageConceptSwitch.Rule:
+        if (props_Rule == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("rule");
+          props_Rule = cpb.create();
+        }
+        return props_Rule;
+      case LanguageConceptSwitch.Sensibility:
+        if (props_Sensibility == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("sensibility");
+          props_Sensibility = cpb.create();
+        }
+        return props_Sensibility;
       case LanguageConceptSwitch.Sensor:
         if (props_Sensor == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -106,27 +167,62 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_Sensor = cpb.create();
         }
         return props_Sensor;
-      case LanguageConceptSwitch.SoundDetector:
-        if (props_SoundDetector == null) {
+      case LanguageConceptSwitch.Sensors:
+        if (props_Sensors == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("sound detector");
-          props_SoundDetector = cpb.create();
+          cpb.rawPresentation("sensors");
+          props_Sensors = cpb.create();
         }
-        return props_SoundDetector;
-      case LanguageConceptSwitch.SubTime:
-        if (props_SubTime == null) {
+        return props_Sensors;
+      case LanguageConceptSwitch.SoundRecordingPolicy:
+        if (props_SoundRecordingPolicy == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("sub time");
-          props_SubTime = cpb.create();
+          cpb.rawPresentation("soundRecordingPolicy");
+          props_SoundRecordingPolicy = cpb.create();
         }
-        return props_SubTime;
-      case LanguageConceptSwitch.Time:
-        if (props_Time == null) {
+        return props_SoundRecordingPolicy;
+      case LanguageConceptSwitch.SoundRecordingSolution:
+        if (props_SoundRecordingSolution == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("at time");
-          props_Time = cpb.create();
+          cpb.rawPresentation("soundRecordingSolution");
+          props_SoundRecordingSolution = cpb.create();
         }
-        return props_Time;
+        return props_SoundRecordingSolution;
+      case LanguageConceptSwitch.Storage:
+        if (props_Storage == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("storage");
+          props_Storage = cpb.create();
+        }
+        return props_Storage;
+      case LanguageConceptSwitch.Trigger:
+        if (props_Trigger == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("trigger");
+          props_Trigger = cpb.create();
+        }
+        return props_Trigger;
+      case LanguageConceptSwitch.Type:
+        if (props_Type == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("type");
+          props_Type = cpb.create();
+        }
+        return props_Type;
+      case LanguageConceptSwitch.Zone:
+        if (props_Zone == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("zone");
+          props_Zone = cpb.create();
+        }
+        return props_Zone;
+      case LanguageConceptSwitch.Zones:
+        if (props_Zones == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("zones");
+          props_Zones = cpb.create();
+        }
+        return props_Zones;
     }
     return null;
   }
