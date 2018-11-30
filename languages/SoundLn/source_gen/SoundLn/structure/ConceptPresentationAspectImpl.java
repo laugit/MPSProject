@@ -14,12 +14,14 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_Area;
   private ConceptPresentation props_Condition;
   private ConceptPresentation props_Conditional;
+  private ConceptPresentation props_CoordinateAreaDefinition;
   private ConceptPresentation props_DataLifeTime;
   private ConceptPresentation props_DataStoragePolicy;
   private ConceptPresentation props_Event;
   private ConceptPresentation props_Events;
   private ConceptPresentation props_Expression;
   private ConceptPresentation props_Expressions;
+  private ConceptPresentation props_GPSCoordinate;
   private ConceptPresentation props_GeneratesEvent;
   private ConceptPresentation props_Policies;
   private ConceptPresentation props_PoliciesKeyWord;
@@ -30,12 +32,15 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_Sensibility;
   private ConceptPresentation props_Sensor;
   private ConceptPresentation props_Sensors;
+  private ConceptPresentation props_SensorsAreaDefinition;
   private ConceptPresentation props_SoundRecordingPolicy;
   private ConceptPresentation props_SoundRecordingSolution;
   private ConceptPresentation props_Storage;
   private ConceptPresentation props_Trigger;
+  private ConceptPresentation props_TriggerWhen;
   private ConceptPresentation props_Type;
   private ConceptPresentation props_Zone;
+  private ConceptPresentation props_ZoneKeyWord;
   private ConceptPresentation props_Zones;
 
   @Override
@@ -78,6 +83,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_Conditional = cpb.create();
         }
         return props_Conditional;
+      case LanguageConceptSwitch.CoordinateAreaDefinition:
+        if (props_CoordinateAreaDefinition == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("cad");
+          props_CoordinateAreaDefinition = cpb.create();
+        }
+        return props_CoordinateAreaDefinition;
       case LanguageConceptSwitch.DataLifeTime:
         if (props_DataLifeTime == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -120,6 +132,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_Expressions = cpb.create();
         }
         return props_Expressions;
+      case LanguageConceptSwitch.GPSCoordinate:
+        if (props_GPSCoordinate == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("gps");
+          props_GPSCoordinate = cpb.create();
+        }
+        return props_GPSCoordinate;
       case LanguageConceptSwitch.GeneratesEvent:
         if (props_GeneratesEvent == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -190,6 +209,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_Sensors = cpb.create();
         }
         return props_Sensors;
+      case LanguageConceptSwitch.SensorsAreaDefinition:
+        if (props_SensorsAreaDefinition == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("sad");
+          props_SensorsAreaDefinition = cpb.create();
+        }
+        return props_SensorsAreaDefinition;
       case LanguageConceptSwitch.SoundRecordingPolicy:
         if (props_SoundRecordingPolicy == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -218,6 +244,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_Trigger = cpb.create();
         }
         return props_Trigger;
+      case LanguageConceptSwitch.TriggerWhen:
+        if (props_TriggerWhen == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("when");
+          props_TriggerWhen = cpb.create();
+        }
+        return props_TriggerWhen;
       case LanguageConceptSwitch.Type:
         if (props_Type == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -232,6 +265,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_Zone = cpb.create();
         }
         return props_Zone;
+      case LanguageConceptSwitch.ZoneKeyWord:
+        if (props_ZoneKeyWord == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("zone");
+          props_ZoneKeyWord = cpb.create();
+        }
+        return props_ZoneKeyWord;
       case LanguageConceptSwitch.Zones:
         if (props_Zones == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();

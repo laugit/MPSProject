@@ -43,11 +43,6 @@
     <property role="TrG5h" value="SoundRecordingPolicy" />
     <property role="34LRSv" value="soundRecordingPolicy" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyi" id="6QiEg_OxlCI" role="1TKVEl">
-      <property role="IQ2nx" value="7895558954808597038" />
-      <property role="TrG5h" value="name" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
-    </node>
     <node concept="1TJgyj" id="5tqCfWVLTyX" role="1TKVEi">
       <property role="IQ2ns" value="6294520447283730621" />
       <property role="20lmBu" value="aggregation" />
@@ -77,7 +72,7 @@
       <property role="IQ2ns" value="6294520447283730618" />
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="zone" />
-      <ref role="20lvS9" node="5tqCfWVLT$N" resolve="Zone" />
+      <ref role="20lvS9" node="69aL8miUL1L" resolve="ZoneKeyWord" />
     </node>
   </node>
   <node concept="1TIwiD" id="6QiEg_Oxvj0">
@@ -282,6 +277,12 @@
     <property role="TrG5h" value="Position" />
     <property role="34LRSv" value="position" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="69aL8miQbwS" role="1TKVEi">
+      <property role="IQ2ns" value="7082689441966897208" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="gpsCoordinate" />
+      <ref role="20lvS9" node="69aL8miQbuE" resolve="GPSCoordinate" />
+    </node>
   </node>
   <node concept="1TIwiD" id="5tqCfWVLT$N">
     <property role="EcuMT" value="6294520447283730739" />
@@ -319,6 +320,18 @@
     <property role="TrG5h" value="Area" />
     <property role="34LRSv" value="area" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="69aL8miQq49" role="1TKVEi">
+      <property role="IQ2ns" value="7082689441966956809" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="sensorsDefinition" />
+      <ref role="20lvS9" node="69aL8miQq0U" resolve="SensorsAreaDefinition" />
+    </node>
+    <node concept="1TJgyj" id="69aL8miQq5a" role="1TKVEi">
+      <property role="IQ2ns" value="7082689441966956874" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="coordinateDefinition" />
+      <ref role="20lvS9" node="69aL8miQq4b" resolve="CoordinateAreaDefinition" />
+    </node>
   </node>
   <node concept="1TIwiD" id="5tqCfWVLT$Y">
     <property role="EcuMT" value="6294520447283730750" />
@@ -338,6 +351,11 @@
     <property role="TrG5h" value="PoliciesKeyWord" />
     <property role="34LRSv" value="policies" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="69aL8miV4$J" role="1TKVEl">
+      <property role="IQ2nx" value="7082689441968179503" />
+      <property role="TrG5h" value="policiesNames" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
   </node>
   <node concept="1TIwiD" id="5tqCfWVLT_6">
     <property role="EcuMT" value="6294520447283730758" />
@@ -357,10 +375,12 @@
     <property role="TrG5h" value="Trigger" />
     <property role="34LRSv" value="trigger" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyi" id="5dXcKRzr5yq" role="1TKVEl">
-      <property role="IQ2nx" value="6016020811979970714" />
-      <property role="TrG5h" value="when" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    <node concept="1TJgyj" id="69aL8miVFHO" role="1TKVEi">
+      <property role="IQ2ns" value="7082689441968339828" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="whenCond" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="69aL8miVFHi" resolve="TriggerWhen" />
     </node>
   </node>
   <node concept="1TIwiD" id="5tqCfWVLTAd">
@@ -368,6 +388,11 @@
     <property role="TrG5h" value="GeneratesEvent" />
     <property role="34LRSv" value="generates event" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="69aL8miW00s" role="1TKVEl">
+      <property role="IQ2nx" value="7082689441968422940" />
+      <property role="TrG5h" value="eventName" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
   </node>
   <node concept="1TIwiD" id="5tqCfWVLTB2">
     <property role="EcuMT" value="6294520447283730882" />
@@ -406,61 +431,6 @@
     <property role="34LRSv" value="alert" />
     <ref role="1TJDcQ" node="97Qnni__pP" resolve="Action" />
   </node>
-  <node concept="1TIwiD" id="5tqCfWVMgtH">
-    <property role="EcuMT" value="6294520447283824493" />
-    <property role="TrG5h" value="SoundRecordingSolution" />
-    <property role="34LRSv" value="soundRecordingSolution" />
-    <property role="19KtqR" value="true" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyj" id="5dXcKRzqvMM" role="1TKVEi">
-      <property role="IQ2ns" value="6016020811979816114" />
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="expressions" />
-      <ref role="20lvS9" node="5dXcKRzqvLQ" resolve="Expressions" />
-    </node>
-    <node concept="1TJgyi" id="5tqCfWVMgtI" role="1TKVEl">
-      <property role="IQ2nx" value="6294520447283824494" />
-      <property role="TrG5h" value="name" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
-    </node>
-    <node concept="1TJgyj" id="5tqCfWVMgtK" role="1TKVEi">
-      <property role="IQ2ns" value="6294520447283824496" />
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="soundRecordingPolicy" />
-      <ref role="20lvS9" node="6QiEg_OxlCE" resolve="SoundRecordingPolicy" />
-    </node>
-    <node concept="1TJgyj" id="5tqCfWVMgtM" role="1TKVEi">
-      <property role="IQ2ns" value="6294520447283824498" />
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="dataStoragePolicy" />
-      <property role="20lbJX" value="0..1" />
-      <ref role="20lvS9" node="5tqCfWVLTzm" resolve="DataStoragePolicy" />
-    </node>
-    <node concept="1TJgyj" id="5tqCfWVMgtP" role="1TKVEi">
-      <property role="IQ2ns" value="6294520447283824501" />
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="sensors" />
-      <ref role="20lvS9" node="5tqCfWVLT$J" resolve="Sensors" />
-    </node>
-    <node concept="1TJgyj" id="5tqCfWVMgtT" role="1TKVEi">
-      <property role="IQ2ns" value="6294520447283824505" />
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="zones" />
-      <ref role="20lvS9" node="5tqCfWVLT$Y" resolve="Zones" />
-    </node>
-    <node concept="1TJgyj" id="5tqCfWVMgtY" role="1TKVEi">
-      <property role="IQ2ns" value="6294520447283824510" />
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="policies" />
-      <ref role="20lvS9" node="5tqCfWVLT_6" resolve="Policies" />
-    </node>
-    <node concept="1TJgyj" id="5tqCfWVMgu4" role="1TKVEi">
-      <property role="IQ2ns" value="6294520447283824516" />
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="events" />
-      <ref role="20lvS9" node="5tqCfWVLTB2" resolve="Events" />
-    </node>
-  </node>
   <node concept="1TIwiD" id="5dXcKRzqvLQ">
     <property role="EcuMT" value="6016020811979816054" />
     <property role="TrG5h" value="Expressions" />
@@ -498,6 +468,150 @@
     <node concept="1TJgyi" id="5dXcKRzr5$A" role="1TKVEl">
       <property role="IQ2nx" value="6016020811979970854" />
       <property role="TrG5h" value="type" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="69aL8miPYoX">
+    <property role="EcuMT" value="7082689441966843453" />
+    <property role="TrG5h" value="SoundRecordingSolution" />
+    <property role="34LRSv" value="soundRecordingSolution" />
+    <property role="19KtqR" value="true" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="69aL8miPYoY" role="1TKVEi">
+      <property role="IQ2ns" value="7082689441966843454" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="expressions" />
+      <ref role="20lvS9" node="5dXcKRzqvLQ" resolve="Expressions" />
+    </node>
+    <node concept="1TJgyj" id="69aL8miPYp0" role="1TKVEi">
+      <property role="IQ2ns" value="7082689441966843456" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="soundRecordingPolicy" />
+      <ref role="20lvS9" node="6QiEg_OxlCE" resolve="SoundRecordingPolicy" />
+    </node>
+    <node concept="1TJgyj" id="69aL8miPYp3" role="1TKVEi">
+      <property role="IQ2ns" value="7082689441966843459" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="dataStoragePolicy" />
+      <property role="20lbJX" value="0..1" />
+      <ref role="20lvS9" node="5tqCfWVLTzm" resolve="DataStoragePolicy" />
+    </node>
+    <node concept="1TJgyj" id="69aL8miPYp7" role="1TKVEi">
+      <property role="IQ2ns" value="7082689441966843463" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="sensors" />
+      <ref role="20lvS9" node="5tqCfWVLT$J" resolve="Sensors" />
+    </node>
+    <node concept="1TJgyj" id="69aL8miPYpc" role="1TKVEi">
+      <property role="IQ2ns" value="7082689441966843468" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="zones" />
+      <ref role="20lvS9" node="5tqCfWVLT$Y" resolve="Zones" />
+    </node>
+    <node concept="1TJgyj" id="69aL8miPYpi" role="1TKVEi">
+      <property role="IQ2ns" value="7082689441966843474" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="policies" />
+      <ref role="20lvS9" node="5tqCfWVLT_6" resolve="Policies" />
+    </node>
+    <node concept="1TJgyj" id="69aL8miPYpp" role="1TKVEi">
+      <property role="IQ2ns" value="7082689441966843481" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="events" />
+      <ref role="20lvS9" node="5tqCfWVLTB2" resolve="Events" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="69aL8miQbuE">
+    <property role="EcuMT" value="7082689441966897066" />
+    <property role="TrG5h" value="GPSCoordinate" />
+    <property role="34LRSv" value="gps" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="69aL8miQbuF" role="1TKVEl">
+      <property role="IQ2nx" value="7082689441966897067" />
+      <property role="TrG5h" value="latitudeInt" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+    <node concept="1TJgyi" id="69aL8miQbvx" role="1TKVEl">
+      <property role="IQ2nx" value="7082689441966897121" />
+      <property role="TrG5h" value="latitudeDec" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+    <node concept="1TJgyi" id="69aL8miQbuH" role="1TKVEl">
+      <property role="IQ2nx" value="7082689441966897069" />
+      <property role="TrG5h" value="longitudeInt" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+    <node concept="1TJgyi" id="69aL8miQbv_" role="1TKVEl">
+      <property role="IQ2nx" value="7082689441966897125" />
+      <property role="TrG5h" value="longitudeDec" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="69aL8miQq0U">
+    <property role="EcuMT" value="7082689441966956602" />
+    <property role="TrG5h" value="SensorsAreaDefinition" />
+    <property role="34LRSv" value="sad" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="69aL8miQq0V" role="1TKVEl">
+      <property role="IQ2nx" value="7082689441966956603" />
+      <property role="TrG5h" value="sensor1Name" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyi" id="69aL8miQq0X" role="1TKVEl">
+      <property role="IQ2nx" value="7082689441966956605" />
+      <property role="TrG5h" value="sensor2Name" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyi" id="69aL8miQq10" role="1TKVEl">
+      <property role="IQ2nx" value="7082689441966956608" />
+      <property role="TrG5h" value="sensor3Name" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyi" id="69aL8miQq14" role="1TKVEl">
+      <property role="IQ2nx" value="7082689441966956612" />
+      <property role="TrG5h" value="sensor4Name" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="69aL8miQq4b">
+    <property role="EcuMT" value="7082689441966956811" />
+    <property role="TrG5h" value="CoordinateAreaDefinition" />
+    <property role="34LRSv" value="cad" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="69aL8miQq4c" role="1TKVEi">
+      <property role="IQ2ns" value="7082689441966956812" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="gpsCoordinate1" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="69aL8miQbuE" resolve="GPSCoordinate" />
+    </node>
+    <node concept="1TJgyj" id="69aL8miQq4e" role="1TKVEi">
+      <property role="IQ2ns" value="7082689441966956814" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="gpsCoordinate2" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="69aL8miQbuE" resolve="GPSCoordinate" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="69aL8miUL1L">
+    <property role="EcuMT" value="7082689441968099441" />
+    <property role="TrG5h" value="ZoneKeyWord" />
+    <property role="34LRSv" value="zone" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="69aL8miUL2h" role="1TKVEl">
+      <property role="IQ2nx" value="7082689441968099473" />
+      <property role="TrG5h" value="zoneName" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="69aL8miVFHi">
+    <property role="EcuMT" value="7082689441968339794" />
+    <property role="TrG5h" value="TriggerWhen" />
+    <property role="34LRSv" value="when" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="69aL8miVFHj" role="1TKVEl">
+      <property role="IQ2nx" value="7082689441968339795" />
+      <property role="TrG5h" value="whenCond" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
   </node>
