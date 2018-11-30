@@ -108,12 +108,12 @@ public class Reaction_TransformationMenu extends TransformationMenuBase {
       @Override
       public void execute(@NotNull String pattern) {
         SLinkOperations.setTarget(_context.getNode(), MetaAdapterFactory.getContainmentLink(0x1cb3be812ce745bcL, 0xb95047f9080cab09L, 0x575aa0ff3bc799c5L, 0x575aa0ff3bc799c6L, "condAction"), SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x1cb3be812ce745bcL, 0xb95047f9080cab09L, 0x247d975d2965655L, "SoundLn.structure.Conditional")));
-        SPropertyOperations.assign(SLinkOperations.getTarget(_context.getNode(), MetaAdapterFactory.getContainmentLink(0x1cb3be812ce745bcL, 0xb95047f9080cab09L, 0x575aa0ff3bc799c5L, 0x575aa0ff3bc799c6L, "condAction")), MetaAdapterFactory.getProperty(0x1cb3be812ce745bcL, 0xb95047f9080cab09L, 0x247d975d2965655L, 0x575aa0ff3bc6e1acL, "ifCond"), "true");
+        SLinkOperations.setTarget(SLinkOperations.getTarget(_context.getNode(), MetaAdapterFactory.getContainmentLink(0x1cb3be812ce745bcL, 0xb95047f9080cab09L, 0x575aa0ff3bc799c5L, 0x575aa0ff3bc799c6L, "condAction")), MetaAdapterFactory.getContainmentLink(0x1cb3be812ce745bcL, 0xb95047f9080cab09L, 0x247d975d2965655L, 0x624ac4859312fd3cL, "boolExpr"), SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x1cb3be812ce745bcL, 0xb95047f9080cab09L, 0x624ac4859318971eL, "SoundLn.structure.True")));
       }
 
       @Override
       public boolean canExecute(@NotNull String pattern) {
-        return isEmptyString(SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), MetaAdapterFactory.getContainmentLink(0x1cb3be812ce745bcL, 0xb95047f9080cab09L, 0x575aa0ff3bc799c5L, 0x575aa0ff3bc799c6L, "condAction")), MetaAdapterFactory.getProperty(0x1cb3be812ce745bcL, 0xb95047f9080cab09L, 0x247d975d2965655L, 0x575aa0ff3bc6e1acL, "ifCond")));
+        return (SLinkOperations.getTarget(SLinkOperations.getTarget(_context.getNode(), MetaAdapterFactory.getContainmentLink(0x1cb3be812ce745bcL, 0xb95047f9080cab09L, 0x575aa0ff3bc799c5L, 0x575aa0ff3bc799c6L, "condAction")), MetaAdapterFactory.getContainmentLink(0x1cb3be812ce745bcL, 0xb95047f9080cab09L, 0x247d975d2965655L, 0x624ac4859312fd3cL, "boolExpr")) == null);
       }
 
 

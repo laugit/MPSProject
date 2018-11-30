@@ -12,7 +12,11 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_Action;
   private ConceptPresentation props_Alert;
   private ConceptPresentation props_AllowStorage;
+  private ConceptPresentation props_AndBooleanExpression;
   private ConceptPresentation props_Area;
+  private ConceptPresentation props_AverageSoundLevel;
+  private ConceptPresentation props_BoolFromExpression;
+  private ConceptPresentation props_BooleanExpression;
   private ConceptPresentation props_Condition;
   private ConceptPresentation props_Conditional;
   private ConceptPresentation props_CoordinateAreaDefinition;
@@ -20,13 +24,19 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_DataStoragePolicy;
   private ConceptPresentation props_DisableStorage;
   private ConceptPresentation props_Display;
+  private ConceptPresentation props_Environment;
+  private ConceptPresentation props_EqualBoolExpr;
   private ConceptPresentation props_Event;
   private ConceptPresentation props_Events;
   private ConceptPresentation props_Expression;
   private ConceptPresentation props_Expressions;
+  private ConceptPresentation props_False;
   private ConceptPresentation props_GPSCoordinate;
   private ConceptPresentation props_GeneratesEvent;
+  private ConceptPresentation props_GreaterBoolExpr;
+  private ConceptPresentation props_LowerBoolExpr;
   private ConceptPresentation props_OneLineConditional;
+  private ConceptPresentation props_OrBooleanExpression;
   private ConceptPresentation props_Policies;
   private ConceptPresentation props_PoliciesKeyWord;
   private ConceptPresentation props_Position;
@@ -38,11 +48,17 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_Sensor;
   private ConceptPresentation props_Sensors;
   private ConceptPresentation props_SensorsAreaDefinition;
+  private ConceptPresentation props_Sound;
+  private ConceptPresentation props_SoundFrequency;
+  private ConceptPresentation props_SoundLevel;
+  private ConceptPresentation props_SoundMatches;
   private ConceptPresentation props_SoundRecordingPolicy;
   private ConceptPresentation props_SoundRecordingSolution;
+  private ConceptPresentation props_SoundRepetition;
   private ConceptPresentation props_Storage;
   private ConceptPresentation props_Trigger;
   private ConceptPresentation props_TriggerWhen;
+  private ConceptPresentation props_True;
   private ConceptPresentation props_Type;
   private ConceptPresentation props_Zone;
   private ConceptPresentation props_ZoneKeyWord;
@@ -74,6 +90,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_AllowStorage = cpb.create();
         }
         return props_AllowStorage;
+      case LanguageConceptSwitch.AndBooleanExpression:
+        if (props_AndBooleanExpression == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("andbool");
+          props_AndBooleanExpression = cpb.create();
+        }
+        return props_AndBooleanExpression;
       case LanguageConceptSwitch.Area:
         if (props_Area == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -81,6 +104,27 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_Area = cpb.create();
         }
         return props_Area;
+      case LanguageConceptSwitch.AverageSoundLevel:
+        if (props_AverageSoundLevel == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("averageSoundLevel");
+          props_AverageSoundLevel = cpb.create();
+        }
+        return props_AverageSoundLevel;
+      case LanguageConceptSwitch.BoolFromExpression:
+        if (props_BoolFromExpression == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("expr");
+          props_BoolFromExpression = cpb.create();
+        }
+        return props_BoolFromExpression;
+      case LanguageConceptSwitch.BooleanExpression:
+        if (props_BooleanExpression == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("bool");
+          props_BooleanExpression = cpb.create();
+        }
+        return props_BooleanExpression;
       case LanguageConceptSwitch.Condition:
         if (props_Condition == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -130,6 +174,20 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_Display = cpb.create();
         }
         return props_Display;
+      case LanguageConceptSwitch.Environment:
+        if (props_Environment == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("environment");
+          props_Environment = cpb.create();
+        }
+        return props_Environment;
+      case LanguageConceptSwitch.EqualBoolExpr:
+        if (props_EqualBoolExpr == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("equal");
+          props_EqualBoolExpr = cpb.create();
+        }
+        return props_EqualBoolExpr;
       case LanguageConceptSwitch.Event:
         if (props_Event == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -158,6 +216,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_Expressions = cpb.create();
         }
         return props_Expressions;
+      case LanguageConceptSwitch.False:
+        if (props_False == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("false");
+          props_False = cpb.create();
+        }
+        return props_False;
       case LanguageConceptSwitch.GPSCoordinate:
         if (props_GPSCoordinate == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -172,6 +237,20 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_GeneratesEvent = cpb.create();
         }
         return props_GeneratesEvent;
+      case LanguageConceptSwitch.GreaterBoolExpr:
+        if (props_GreaterBoolExpr == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("greater");
+          props_GreaterBoolExpr = cpb.create();
+        }
+        return props_GreaterBoolExpr;
+      case LanguageConceptSwitch.LowerBoolExpr:
+        if (props_LowerBoolExpr == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("lower");
+          props_LowerBoolExpr = cpb.create();
+        }
+        return props_LowerBoolExpr;
       case LanguageConceptSwitch.OneLineConditional:
         if (props_OneLineConditional == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -179,6 +258,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_OneLineConditional = cpb.create();
         }
         return props_OneLineConditional;
+      case LanguageConceptSwitch.OrBooleanExpression:
+        if (props_OrBooleanExpression == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("orbool");
+          props_OrBooleanExpression = cpb.create();
+        }
+        return props_OrBooleanExpression;
       case LanguageConceptSwitch.Policies:
         if (props_Policies == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -256,6 +342,34 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_SensorsAreaDefinition = cpb.create();
         }
         return props_SensorsAreaDefinition;
+      case LanguageConceptSwitch.Sound:
+        if (props_Sound == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("Sound");
+          props_Sound = cpb.create();
+        }
+        return props_Sound;
+      case LanguageConceptSwitch.SoundFrequency:
+        if (props_SoundFrequency == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("SoundFrequency");
+          props_SoundFrequency = cpb.create();
+        }
+        return props_SoundFrequency;
+      case LanguageConceptSwitch.SoundLevel:
+        if (props_SoundLevel == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("soundLevel");
+          props_SoundLevel = cpb.create();
+        }
+        return props_SoundLevel;
+      case LanguageConceptSwitch.SoundMatches:
+        if (props_SoundMatches == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("sound matches");
+          props_SoundMatches = cpb.create();
+        }
+        return props_SoundMatches;
       case LanguageConceptSwitch.SoundRecordingPolicy:
         if (props_SoundRecordingPolicy == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -270,6 +384,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_SoundRecordingSolution = cpb.create();
         }
         return props_SoundRecordingSolution;
+      case LanguageConceptSwitch.SoundRepetition:
+        if (props_SoundRepetition == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("SoundRepetition");
+          props_SoundRepetition = cpb.create();
+        }
+        return props_SoundRepetition;
       case LanguageConceptSwitch.Storage:
         if (props_Storage == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -291,6 +412,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_TriggerWhen = cpb.create();
         }
         return props_TriggerWhen;
+      case LanguageConceptSwitch.True:
+        if (props_True == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("true");
+          props_True = cpb.create();
+        }
+        return props_True;
       case LanguageConceptSwitch.Type:
         if (props_Type == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();

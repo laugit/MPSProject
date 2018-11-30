@@ -30,9 +30,9 @@
         <child id="6016020811979816057" name="expressions" index="2K5cXO" />
       </concept>
       <concept id="164339011489781333" name="SoundLn.structure.Conditional" flags="ng" index="3gOoWw">
-        <property id="6294520447283683756" name="ifCond" index="1GB45j" />
         <child id="164339011489781371" name="action1" index="3gOoWe" />
         <child id="164339011490161311" name="action2" index="3gQZJE" />
+        <child id="7082689441970715964" name="boolExpr" index="3Lm3AT" />
       </concept>
       <concept id="6294520447283733797" name="SoundLn.structure.Alert" flags="ng" index="1GBgnq">
         <property id="7082689441968593743" name="personToAlert" index="3KI5Za" />
@@ -134,11 +134,21 @@
         <property id="7082689441968099473" name="zoneName" index="3KCtgk" />
       </concept>
       <concept id="7082689441968339794" name="SoundLn.structure.TriggerWhen" flags="ng" index="3KD7Zn">
-        <property id="7082689441968339795" name="whenCond" index="3KD7Zm" />
+        <child id="7082689441971402641" name="boolExpr" index="3LlVck" />
       </concept>
       <concept id="7082689441969860168" name="SoundLn.structure.AllowStorage" flags="ng" index="3LjMFd" />
       <concept id="7082689441969860194" name="SoundLn.structure.DisableStorage" flags="ng" index="3LjMFB" />
       <concept id="7082689441969812402" name="SoundLn.structure.OneLineConditional" flags="ng" index="3LjZsR" />
+      <concept id="7082689441971064854" name="SoundLn.structure.BoolFromExpression" flags="ng" index="3LkDij">
+        <property id="7082689441971064855" name="expression" index="3LkDii" />
+      </concept>
+      <concept id="7082689441970543494" name="SoundLn.structure.SoundLevel" flags="ng" index="3LmDW3">
+        <property id="7082689441970543495" name="comparator" index="3LmDW2" />
+        <property id="7082689441970543497" name="level" index="3LmDWc" />
+      </concept>
+      <concept id="7082689441970543445" name="SoundLn.structure.Environment" flags="ng" index="3LmDZg">
+        <property id="7082689441970543446" name="country" index="3LmDZj" />
+      </concept>
     </language>
   </registry>
   <node concept="3KBiaS" id="69aL8miQbjc">
@@ -156,7 +166,7 @@
         <property role="2K5cXN" value="GPSCoordinate in range 42.04648, 1.31 to 45.64, 2.34" />
       </node>
       <node concept="2K5cXQ" id="69aL8miWZLb" role="2K5cXO">
-        <property role="2K5cXL" value="responsible" />
+        <property role="2K5cXL" value="blockResponsible" />
         <property role="2K5cXN" value="04000000" />
       </node>
     </node>
@@ -185,10 +195,12 @@
           <property role="2K3xqG" value="months" />
         </node>
         <node concept="1GBjwj" id="69aL8mj2qV3" role="1GBjwx">
-          <node concept="3LjZsR" id="69aL8mj43bA" role="3LjNhr">
-            <property role="1GB45j" value="Environment.eu" />
-            <node concept="3LjMFB" id="69aL8mj43bC" role="3gOoWe" />
-            <node concept="3LjMFd" id="69aL8mj43bK" role="3gQZJE" />
+          <node concept="3LjZsR" id="69aL8mj8ASg" role="3LjNhr">
+            <node concept="3LmDZg" id="69aL8mj8ASn" role="3Lm3AT">
+              <property role="3LmDZj" value="eu" />
+            </node>
+            <node concept="3LjMFB" id="69aL8mj9cSv" role="3gOoWe" />
+            <node concept="3LjMFd" id="69aL8mj9cSR" role="3gQZJE" />
           </node>
         </node>
       </node>
@@ -291,13 +303,16 @@
     <node concept="1GBjAT" id="69aL8miQbjn" role="3KBibn">
       <node concept="1GBjxh" id="69aL8miVFHc" role="1GBjAS">
         <property role="1GBjxg" value="loudNoiseSuspicious" />
-        <node concept="1GBjA_" id="69aL8miW00k" role="1GBjAQ">
-          <node concept="3KD7Zn" id="69aL8miW00l" role="3KD7ZL">
-            <property role="3KD7Zm" value="soundLevel &gt; avgSoundLevel + 20 " />
-          </node>
-        </node>
         <node concept="1GBj_M" id="69aL8miW00q" role="1GBjAI">
           <property role="3KIGip" value="potentialIntrusion" />
+        </node>
+        <node concept="1GBjA_" id="69aL8mj9cTa" role="1GBjAQ">
+          <node concept="3KD7Zn" id="69aL8mj9cTb" role="3KD7ZL">
+            <node concept="3LmDW3" id="69aL8mj9KSv" role="3LlVck">
+              <property role="3LmDW2" value="&lt;" />
+              <property role="3LmDWc" value="averageLevel + 10" />
+            </node>
+          </node>
         </node>
       </node>
     </node>
@@ -305,10 +320,12 @@
       <node concept="p5PR9" id="69aL8miWlan" role="1GBj$W">
         <property role="p5PR8" value="potentialIntrusion" />
         <node concept="1GBj$U" id="69aL8miWDGU" role="3gOoWz">
-          <node concept="3gOoWw" id="69aL8miWDH0" role="1GBj$T">
-            <property role="1GB45j" value="atBase()" />
-            <node concept="1GBgnq" id="69aL8miWZL9" role="3gOoWe">
-              <property role="3KI5Za" value="responsible" />
+          <node concept="3gOoWw" id="69aL8mj6YDH" role="1GBj$T">
+            <node concept="3LkDij" id="69aL8mj9cSV" role="3Lm3AT">
+              <property role="3LkDii" value="atBase()" />
+            </node>
+            <node concept="1GBgnq" id="69aL8mj9cSX" role="3gOoWe">
+              <property role="3KI5Za" value="blockResponsible" />
               <property role="3KIjzl" value="call" />
             </node>
           </node>
