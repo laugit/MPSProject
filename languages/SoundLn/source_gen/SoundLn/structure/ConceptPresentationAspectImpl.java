@@ -18,6 +18,8 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_DataStoragePolicy;
   private ConceptPresentation props_Event;
   private ConceptPresentation props_Events;
+  private ConceptPresentation props_Expression;
+  private ConceptPresentation props_Expressions;
   private ConceptPresentation props_GeneratesEvent;
   private ConceptPresentation props_Policies;
   private ConceptPresentation props_PoliciesKeyWord;
@@ -104,6 +106,20 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_Events = cpb.create();
         }
         return props_Events;
+      case LanguageConceptSwitch.Expression:
+        if (props_Expression == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("expression");
+          props_Expression = cpb.create();
+        }
+        return props_Expression;
+      case LanguageConceptSwitch.Expressions:
+        if (props_Expressions == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("expressions");
+          props_Expressions = cpb.create();
+        }
+        return props_Expressions;
       case LanguageConceptSwitch.GeneratesEvent:
         if (props_GeneratesEvent == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();

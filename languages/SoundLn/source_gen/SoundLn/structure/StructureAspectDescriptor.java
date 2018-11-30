@@ -21,6 +21,8 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptDataStoragePolicy = createDescriptorForDataStoragePolicy();
   /*package*/ final ConceptDescriptor myConceptEvent = createDescriptorForEvent();
   /*package*/ final ConceptDescriptor myConceptEvents = createDescriptorForEvents();
+  /*package*/ final ConceptDescriptor myConceptExpression = createDescriptorForExpression();
+  /*package*/ final ConceptDescriptor myConceptExpressions = createDescriptorForExpressions();
   /*package*/ final ConceptDescriptor myConceptGeneratesEvent = createDescriptorForGeneratesEvent();
   /*package*/ final ConceptDescriptor myConceptPolicies = createDescriptorForPolicies();
   /*package*/ final ConceptDescriptor myConceptPoliciesKeyWord = createDescriptorForPoliciesKeyWord();
@@ -46,7 +48,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptAction, myConceptAlert, myConceptArea, myConceptCondition, myConceptConditional, myConceptDataLifeTime, myConceptDataStoragePolicy, myConceptEvent, myConceptEvents, myConceptGeneratesEvent, myConceptPolicies, myConceptPoliciesKeyWord, myConceptPosition, myConceptReaction, myConceptRecording, myConceptRule, myConceptSensibility, myConceptSensor, myConceptSensors, myConceptSoundRecordingPolicy, myConceptSoundRecordingSolution, myConceptStorage, myConceptTrigger, myConceptType, myConceptZone, myConceptZones);
+    return Arrays.asList(myConceptAction, myConceptAlert, myConceptArea, myConceptCondition, myConceptConditional, myConceptDataLifeTime, myConceptDataStoragePolicy, myConceptEvent, myConceptEvents, myConceptExpression, myConceptExpressions, myConceptGeneratesEvent, myConceptPolicies, myConceptPoliciesKeyWord, myConceptPosition, myConceptReaction, myConceptRecording, myConceptRule, myConceptSensibility, myConceptSensor, myConceptSensors, myConceptSoundRecordingPolicy, myConceptSoundRecordingSolution, myConceptStorage, myConceptTrigger, myConceptType, myConceptZone, myConceptZones);
   }
 
   @Override
@@ -71,6 +73,10 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
         return myConceptEvent;
       case LanguageConceptSwitch.Events:
         return myConceptEvents;
+      case LanguageConceptSwitch.Expression:
+        return myConceptExpression;
+      case LanguageConceptSwitch.Expressions:
+        return myConceptExpressions;
       case LanguageConceptSwitch.GeneratesEvent:
         return myConceptGeneratesEvent;
       case LanguageConceptSwitch.Policies:
@@ -145,6 +151,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.class_(false, false, false);
     b.origin("r:b5550555-b3bc-4782-a6c7-5f089d01e8cd(SoundLn.structure)/6294520447283730623");
     b.version(2);
+    b.prop("condition", 0x537d330de36c58d6L, "6016020811979970774");
     b.alias("condition");
     return b.create();
   }
@@ -164,6 +171,8 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.class_(false, false, false);
     b.origin("r:b5550555-b3bc-4782-a6c7-5f089d01e8cd(SoundLn.structure)/6294520447283730669");
     b.version(2);
+    b.prop("number", 0x537d330de373259fL, "6016020811980416415");
+    b.prop("timeUnity", 0x537d330de37325a1L, "6016020811980416417");
     b.alias("dataLifeTime");
     return b.create();
   }
@@ -193,6 +202,25 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.version(2);
     b.aggregate("events", 0x575aa0ff3bc799c3L).target(0x1cb3be812ce745bcL, 0xb95047f9080cab09L, 0x6d92a9097485f4c0L).optional(true).ordered(true).multiple(true).origin("6294520447283730883").done();
     b.alias("events");
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForExpression() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("SoundLn", "Expression", 0x1cb3be812ce745bcL, 0xb95047f9080cab09L, 0x537d330de369fc7bL);
+    b.class_(false, false, false);
+    b.origin("r:b5550555-b3bc-4782-a6c7-5f089d01e8cd(SoundLn.structure)/6016020811979816059");
+    b.version(2);
+    b.prop("expressionName", 0x537d330de369fc7cL, "6016020811979816060");
+    b.prop("expressionDefinition", 0x537d330de369fc7eL, "6016020811979816062");
+    b.alias("expression");
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForExpressions() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("SoundLn", "Expressions", 0x1cb3be812ce745bcL, 0xb95047f9080cab09L, 0x537d330de369fc76L);
+    b.class_(false, false, false);
+    b.origin("r:b5550555-b3bc-4782-a6c7-5f089d01e8cd(SoundLn.structure)/6016020811979816054");
+    b.version(2);
+    b.aggregate("expressions", 0x537d330de369fc79L).target(0x1cb3be812ce745bcL, 0xb95047f9080cab09L, 0x537d330de369fc7bL).optional(true).ordered(true).multiple(true).origin("6016020811979816057").done();
+    b.alias("expressions");
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForGeneratesEvent() {
@@ -239,10 +267,11 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForRecording() {
-    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("SoundLn", "Recording", 0x1cb3be812ce745bcL, 0xb95047f9080cab09L, 0x575aa0ff3bc798c0L);
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("SoundLn", "Recording", 0x1cb3be812ce745bcL, 0xb95047f9080cab09L, 0x537d330de36c5924L);
     b.class_(false, false, false);
-    b.origin("r:b5550555-b3bc-4782-a6c7-5f089d01e8cd(SoundLn.structure)/6294520447283730624");
+    b.origin("r:b5550555-b3bc-4782-a6c7-5f089d01e8cd(SoundLn.structure)/6016020811979970852");
     b.version(2);
+    b.prop("type", 0x537d330de36c5926L, "6016020811979970854");
     b.alias("recording");
     return b.create();
   }
@@ -253,7 +282,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.version(2);
     b.prop("name", 0x575aa0ff3bc798afL, "6294520447283730607");
     b.aggregate("condition", 0x575aa0ff3bc798c3L).target(0x1cb3be812ce745bcL, 0xb95047f9080cab09L, 0x575aa0ff3bc798bfL).optional(true).ordered(true).multiple(false).origin("6294520447283730627").done();
-    b.aggregate("recording", 0x575aa0ff3bc798c9L).target(0x1cb3be812ce745bcL, 0xb95047f9080cab09L, 0x575aa0ff3bc798c0L).optional(true).ordered(true).multiple(false).origin("6294520447283730633").done();
+    b.aggregate("recording", 0x575aa0ff3bc798c9L).target(0x1cb3be812ce745bcL, 0xb95047f9080cab09L, 0x537d330de36c5924L).optional(true).ordered(true).multiple(false).origin("6294520447283730633").done();
     b.aggregate("sensibility", 0x575aa0ff3bc798d2L).target(0x1cb3be812ce745bcL, 0xb95047f9080cab09L, 0x575aa0ff3bc798cdL).optional(true).ordered(true).multiple(false).origin("6294520447283730642").done();
     b.aggregate("type", 0x575aa0ff3bc798f3L).target(0x1cb3be812ce745bcL, 0xb95047f9080cab09L, 0x575aa0ff3bc798ebL).optional(true).ordered(true).multiple(false).origin("6294520447283730675").done();
     b.aggregate("storage", 0x575aa0ff3bc798deL).target(0x1cb3be812ce745bcL, 0xb95047f9080cab09L, 0x575aa0ff3bc798ecL).optional(true).ordered(true).multiple(false).origin("6294520447283730654").done();
@@ -268,6 +297,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.class_(false, false, false);
     b.origin("r:b5550555-b3bc-4782-a6c7-5f089d01e8cd(SoundLn.structure)/6294520447283730637");
     b.version(2);
+    b.prop("type", 0x537d330de36ce0b5L, "6016020811980005557");
     b.alias("sensibility");
     return b.create();
   }
@@ -307,6 +337,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.origin("r:b5550555-b3bc-4782-a6c7-5f089d01e8cd(SoundLn.structure)/6294520447283824493");
     b.version(2);
     b.prop("name", 0x575aa0ff3bc9076eL, "6294520447283824494");
+    b.aggregate("expressions", 0x537d330de369fcb2L).target(0x1cb3be812ce745bcL, 0xb95047f9080cab09L, 0x537d330de369fc76L).optional(true).ordered(true).multiple(false).origin("6016020811979816114").done();
     b.aggregate("soundRecordingPolicy", 0x575aa0ff3bc90770L).target(0x1cb3be812ce745bcL, 0xb95047f9080cab09L, 0x6d92a90974855a2aL).optional(true).ordered(true).multiple(false).origin("6294520447283824496").done();
     b.aggregate("dataStoragePolicy", 0x575aa0ff3bc90772L).target(0x1cb3be812ce745bcL, 0xb95047f9080cab09L, 0x575aa0ff3bc798d6L).optional(true).ordered(true).multiple(false).origin("6294520447283824498").done();
     b.aggregate("sensors", 0x575aa0ff3bc90775L).target(0x1cb3be812ce745bcL, 0xb95047f9080cab09L, 0x575aa0ff3bc7992fL).optional(true).ordered(true).multiple(false).origin("6294520447283824501").done();
@@ -321,6 +352,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.class_(false, false, false);
     b.origin("r:b5550555-b3bc-4782-a6c7-5f089d01e8cd(SoundLn.structure)/6294520447283730668");
     b.version(2);
+    b.prop("type", 0x537d330de36fa891L, "6016020811980187793");
     b.alias("storage");
     return b.create();
   }
@@ -329,6 +361,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.class_(false, false, false);
     b.origin("r:b5550555-b3bc-4782-a6c7-5f089d01e8cd(SoundLn.structure)/6294520447283730778");
     b.version(2);
+    b.prop("when", 0x537d330de36c589aL, "6016020811979970714");
     b.alias("trigger");
     return b.create();
   }
@@ -337,6 +370,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.class_(false, false, false);
     b.origin("r:b5550555-b3bc-4782-a6c7-5f089d01e8cd(SoundLn.structure)/6294520447283730667");
     b.version(2);
+    b.prop("type", 0x537d330de36eb296L, "6016020811980124822");
     b.alias("type");
     return b.create();
   }

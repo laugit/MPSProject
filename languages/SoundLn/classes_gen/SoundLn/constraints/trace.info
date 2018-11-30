@@ -1,8 +1,174 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070475587102:jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
   <root>
     <file name="ConstraintsAspectDescriptor.java">
-      <unit at="10,0,20,0" name="SoundLn.constraints.ConstraintsAspectDescriptor" />
+      <unit at="13,0,37,0" name="SoundLn.constraints.ConstraintsAspectDescriptor" />
+    </file>
+  </root>
+  <root nodeRef="r:9cfaefc3-3548-4b53-ad7d-f37e024e28f9(SoundLn.constraints)/6016020811979970856">
+    <file name="Recording_Constraints.java">
+      <node id="6016020811979970856" at="17,34,18,135" concept="5" />
+      <node id="6016020811979970856" at="22,84,23,119" concept="3" />
+      <node id="6016020811979970857" at="26,40,27,20" concept="4" />
+      <node id="6016020811979970857" at="30,70,31,37" concept="3" />
+      <node id="6016020811979971327" at="31,37,32,153" concept="4" />
+      <node id="6016020811979970856" at="34,7,35,22" concept="4" />
+      <node id="6016020811979970856" at="17,0,20,0" concept="0" trace="Recording_Constraints#()V" />
+      <node id="6016020811979970857" at="25,0,29,0" concept="2" trace="hasOwnValidator#()Z" />
+      <node id="6016020811979970857" at="29,0,34,0" concept="2" trace="validateValue#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/String;)Z" />
+      <node id="6016020811979970857" at="23,119,34,7" concept="1" />
+      <node id="6016020811979970856" at="21,0,37,0" concept="2" trace="getSpecifiedProperties#()Ljava/util/Map;" />
+      <scope id="6016020811979970856" at="17,34,18,135" />
+      <scope id="6016020811979970857" at="26,40,27,20" />
+      <scope id="6016020811979970857" at="30,70,32,153">
+        <var name="propertyName" id="6016020811979970857" />
+      </scope>
+      <scope id="6016020811979970856" at="17,0,20,0" />
+      <scope id="6016020811979970857" at="25,0,29,0" />
+      <scope id="6016020811979970857" at="29,0,34,0">
+        <var name="node" id="6016020811979970857" />
+        <var name="propertyValue" id="6016020811979970857" />
+      </scope>
+      <scope id="6016020811979970856" at="22,84,35,22">
+        <var name="properties" id="6016020811979970856" />
+      </scope>
+      <scope id="6016020811979970856" at="21,0,37,0" />
+      <unit id="6016020811979970857" at="24,147,34,5" name="SoundLn.constraints.Recording_Constraints$1" />
+      <unit id="6016020811979970856" at="16,0,38,0" name="SoundLn.constraints.Recording_Constraints" />
+    </file>
+  </root>
+  <root nodeRef="r:9cfaefc3-3548-4b53-ad7d-f37e024e28f9(SoundLn.constraints)/6016020811980005579">
+    <file name="Sensibility_Constraints.java">
+      <node id="6016020811980005579" at="17,36,18,137" concept="5" />
+      <node id="6016020811980005579" at="22,84,23,119" concept="3" />
+      <node id="6016020811980005580" at="26,40,27,20" concept="4" />
+      <node id="6016020811980005580" at="30,70,31,37" concept="3" />
+      <node id="6016020811980006050" at="31,37,32,208" concept="4" />
+      <node id="6016020811980005579" at="34,7,35,22" concept="4" />
+      <node id="6016020811980005579" at="17,0,20,0" concept="0" trace="Sensibility_Constraints#()V" />
+      <node id="6016020811980005580" at="25,0,29,0" concept="2" trace="hasOwnValidator#()Z" />
+      <node id="6016020811980005580" at="29,0,34,0" concept="2" trace="validateValue#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/String;)Z" />
+      <node id="6016020811980005580" at="23,119,34,7" concept="1" />
+      <node id="6016020811980005579" at="21,0,37,0" concept="2" trace="getSpecifiedProperties#()Ljava/util/Map;" />
+      <scope id="6016020811980005579" at="17,36,18,137" />
+      <scope id="6016020811980005580" at="26,40,27,20" />
+      <scope id="6016020811980005580" at="30,70,32,208">
+        <var name="propertyName" id="6016020811980005580" />
+      </scope>
+      <scope id="6016020811980005579" at="17,0,20,0" />
+      <scope id="6016020811980005580" at="25,0,29,0" />
+      <scope id="6016020811980005580" at="29,0,34,0">
+        <var name="node" id="6016020811980005580" />
+        <var name="propertyValue" id="6016020811980005580" />
+      </scope>
+      <scope id="6016020811980005579" at="22,84,35,22">
+        <var name="properties" id="6016020811980005579" />
+      </scope>
+      <scope id="6016020811980005579" at="21,0,37,0" />
+      <unit id="6016020811980005580" at="24,147,34,5" name="SoundLn.constraints.Sensibility_Constraints$1" />
+      <unit id="6016020811980005579" at="16,0,38,0" name="SoundLn.constraints.Sensibility_Constraints" />
+    </file>
+  </root>
+  <root nodeRef="r:9cfaefc3-3548-4b53-ad7d-f37e024e28f9(SoundLn.constraints)/6016020811980124851">
+    <file name="Type_Constraints.java">
+      <node id="6016020811980124851" at="17,29,18,130" concept="5" />
+      <node id="6016020811980124851" at="22,84,23,119" concept="3" />
+      <node id="6016020811980124852" at="26,40,27,20" concept="4" />
+      <node id="6016020811980124852" at="30,70,31,37" concept="3" />
+      <node id="6016020811980125322" at="31,37,32,309" concept="4" />
+      <node id="6016020811980124851" at="34,7,35,22" concept="4" />
+      <node id="6016020811980124851" at="17,0,20,0" concept="0" trace="Type_Constraints#()V" />
+      <node id="6016020811980124852" at="25,0,29,0" concept="2" trace="hasOwnValidator#()Z" />
+      <node id="6016020811980124852" at="29,0,34,0" concept="2" trace="validateValue#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/String;)Z" />
+      <node id="6016020811980124852" at="23,119,34,7" concept="1" />
+      <node id="6016020811980124851" at="21,0,37,0" concept="2" trace="getSpecifiedProperties#()Ljava/util/Map;" />
+      <scope id="6016020811980124851" at="17,29,18,130" />
+      <scope id="6016020811980124852" at="26,40,27,20" />
+      <scope id="6016020811980124852" at="30,70,32,309">
+        <var name="propertyName" id="6016020811980124852" />
+      </scope>
+      <scope id="6016020811980124851" at="17,0,20,0" />
+      <scope id="6016020811980124852" at="25,0,29,0" />
+      <scope id="6016020811980124852" at="29,0,34,0">
+        <var name="node" id="6016020811980124852" />
+        <var name="propertyValue" id="6016020811980124852" />
+      </scope>
+      <scope id="6016020811980124851" at="22,84,35,22">
+        <var name="properties" id="6016020811980124851" />
+      </scope>
+      <scope id="6016020811980124851" at="21,0,37,0" />
+      <unit id="6016020811980124852" at="24,147,34,5" name="SoundLn.constraints.Type_Constraints$1" />
+      <unit id="6016020811980124851" at="16,0,38,0" name="SoundLn.constraints.Type_Constraints" />
+    </file>
+  </root>
+  <root nodeRef="r:9cfaefc3-3548-4b53-ad7d-f37e024e28f9(SoundLn.constraints)/6016020811980274034">
+    <file name="Storage_Constraints.java">
+      <node id="6016020811980274034" at="17,32,18,133" concept="5" />
+      <node id="6016020811980274034" at="22,84,23,119" concept="3" />
+      <node id="6016020811980274035" at="26,40,27,20" concept="4" />
+      <node id="6016020811980274035" at="30,70,31,37" concept="3" />
+      <node id="6016020811980274555" at="31,37,32,252" concept="4" />
+      <node id="6016020811980274034" at="34,7,35,22" concept="4" />
+      <node id="6016020811980274034" at="17,0,20,0" concept="0" trace="Storage_Constraints#()V" />
+      <node id="6016020811980274035" at="25,0,29,0" concept="2" trace="hasOwnValidator#()Z" />
+      <node id="6016020811980274035" at="29,0,34,0" concept="2" trace="validateValue#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/String;)Z" />
+      <node id="6016020811980274035" at="23,119,34,7" concept="1" />
+      <node id="6016020811980274034" at="21,0,37,0" concept="2" trace="getSpecifiedProperties#()Ljava/util/Map;" />
+      <scope id="6016020811980274034" at="17,32,18,133" />
+      <scope id="6016020811980274035" at="26,40,27,20" />
+      <scope id="6016020811980274035" at="30,70,32,252">
+        <var name="propertyName" id="6016020811980274035" />
+      </scope>
+      <scope id="6016020811980274034" at="17,0,20,0" />
+      <scope id="6016020811980274035" at="25,0,29,0" />
+      <scope id="6016020811980274035" at="29,0,34,0">
+        <var name="node" id="6016020811980274035" />
+        <var name="propertyValue" id="6016020811980274035" />
+      </scope>
+      <scope id="6016020811980274034" at="22,84,35,22">
+        <var name="properties" id="6016020811980274034" />
+      </scope>
+      <scope id="6016020811980274034" at="21,0,37,0" />
+      <unit id="6016020811980274035" at="24,147,34,5" name="SoundLn.constraints.Storage_Constraints$1" />
+      <unit id="6016020811980274034" at="16,0,38,0" name="SoundLn.constraints.Storage_Constraints" />
+    </file>
+  </root>
+  <root nodeRef="r:9cfaefc3-3548-4b53-ad7d-f37e024e28f9(SoundLn.constraints)/6016020811980416451">
+    <file name="DataLifeTime_Constraints.java">
+      <node id="6016020811980416451" at="17,37,18,138" concept="5" />
+      <node id="6016020811980416451" at="22,84,23,119" concept="3" />
+      <node id="6016020811980416452" at="26,40,27,20" concept="4" />
+      <node id="6016020811980416452" at="30,70,31,42" concept="3" />
+      <node id="6016020811980416922" at="31,42,32,210" concept="4" />
+      <node id="6016020811980416451" at="34,7,35,22" concept="4" />
+      <node id="6016020811980416451" at="17,0,20,0" concept="0" trace="DataLifeTime_Constraints#()V" />
+      <node id="6016020811980416452" at="25,0,29,0" concept="2" trace="hasOwnValidator#()Z" />
+      <node id="6016020811980416452" at="29,0,34,0" concept="2" trace="validateValue#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/String;)Z" />
+      <node id="6016020811980416452" at="23,119,34,7" concept="1" />
+      <node id="6016020811980416451" at="21,0,37,0" concept="2" trace="getSpecifiedProperties#()Ljava/util/Map;" />
+      <scope id="6016020811980416451" at="17,37,18,138" />
+      <scope id="6016020811980416452" at="26,40,27,20" />
+      <scope id="6016020811980416452" at="30,70,32,210">
+        <var name="propertyName" id="6016020811980416452" />
+      </scope>
+      <scope id="6016020811980416451" at="17,0,20,0" />
+      <scope id="6016020811980416452" at="25,0,29,0" />
+      <scope id="6016020811980416452" at="29,0,34,0">
+        <var name="node" id="6016020811980416452" />
+        <var name="propertyValue" id="6016020811980416452" />
+      </scope>
+      <scope id="6016020811980416451" at="22,84,35,22">
+        <var name="properties" id="6016020811980416451" />
+      </scope>
+      <scope id="6016020811980416451" at="21,0,37,0" />
+      <unit id="6016020811980416452" at="24,152,34,5" name="SoundLn.constraints.DataLifeTime_Constraints$1" />
+      <unit id="6016020811980416451" at="16,0,38,0" name="SoundLn.constraints.DataLifeTime_Constraints" />
     </file>
   </root>
 </debug-info>
