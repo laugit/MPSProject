@@ -95,7 +95,7 @@ public class Conditional_TransformationMenu extends TransformationMenuBase {
       @Override
       public void execute(@NotNull String pattern) {
         SLinkOperations.setTarget(_context.getNode(), MetaAdapterFactory.getContainmentLink(0x1cb3be812ce745bcL, 0xb95047f9080cab09L, 0x247d975d2965655L, 0x247d975d29c229fL, "action2"), SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x1cb3be812ce745bcL, 0xb95047f9080cab09L, 0x247d975d2965675L, "SoundLn.structure.Action")));
-        SPropertyOperations.assign(SLinkOperations.getTarget(_context.getNode(), MetaAdapterFactory.getContainmentLink(0x1cb3be812ce745bcL, 0xb95047f9080cab09L, 0x247d975d2965655L, 0x247d975d29c229fL, "action2")), MetaAdapterFactory.getProperty(0x1cb3be812ce745bcL, 0xb95047f9080cab09L, 0x247d975d2965675L, 0x247d975d29c5a77L, "do"), "default");
+        SPropertyOperations.assign(SLinkOperations.getTarget(_context.getNode(), MetaAdapterFactory.getContainmentLink(0x1cb3be812ce745bcL, 0xb95047f9080cab09L, 0x247d975d2965655L, 0x247d975d29c229fL, "action2")), MetaAdapterFactory.getProperty(0x1cb3be812ce745bcL, 0xb95047f9080cab09L, 0x247d975d2965675L, 0x247d975d29c5a77L, "do"), "nothing");
       }
 
       @Override

@@ -14,21 +14,26 @@ import jetbrains.mps.smodel.runtime.impl.ConceptDescriptorBuilder2;
 public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptAction = createDescriptorForAction();
   /*package*/ final ConceptDescriptor myConceptAlert = createDescriptorForAlert();
+  /*package*/ final ConceptDescriptor myConceptAllowStorage = createDescriptorForAllowStorage();
   /*package*/ final ConceptDescriptor myConceptArea = createDescriptorForArea();
   /*package*/ final ConceptDescriptor myConceptCondition = createDescriptorForCondition();
   /*package*/ final ConceptDescriptor myConceptConditional = createDescriptorForConditional();
   /*package*/ final ConceptDescriptor myConceptCoordinateAreaDefinition = createDescriptorForCoordinateAreaDefinition();
   /*package*/ final ConceptDescriptor myConceptDataLifeTime = createDescriptorForDataLifeTime();
   /*package*/ final ConceptDescriptor myConceptDataStoragePolicy = createDescriptorForDataStoragePolicy();
+  /*package*/ final ConceptDescriptor myConceptDisableStorage = createDescriptorForDisableStorage();
+  /*package*/ final ConceptDescriptor myConceptDisplay = createDescriptorForDisplay();
   /*package*/ final ConceptDescriptor myConceptEvent = createDescriptorForEvent();
   /*package*/ final ConceptDescriptor myConceptEvents = createDescriptorForEvents();
   /*package*/ final ConceptDescriptor myConceptExpression = createDescriptorForExpression();
   /*package*/ final ConceptDescriptor myConceptExpressions = createDescriptorForExpressions();
   /*package*/ final ConceptDescriptor myConceptGPSCoordinate = createDescriptorForGPSCoordinate();
   /*package*/ final ConceptDescriptor myConceptGeneratesEvent = createDescriptorForGeneratesEvent();
+  /*package*/ final ConceptDescriptor myConceptOneLineConditional = createDescriptorForOneLineConditional();
   /*package*/ final ConceptDescriptor myConceptPolicies = createDescriptorForPolicies();
   /*package*/ final ConceptDescriptor myConceptPoliciesKeyWord = createDescriptorForPoliciesKeyWord();
   /*package*/ final ConceptDescriptor myConceptPosition = createDescriptorForPosition();
+  /*package*/ final ConceptDescriptor myConceptRadio = createDescriptorForRadio();
   /*package*/ final ConceptDescriptor myConceptReaction = createDescriptorForReaction();
   /*package*/ final ConceptDescriptor myConceptRecording = createDescriptorForRecording();
   /*package*/ final ConceptDescriptor myConceptRule = createDescriptorForRule();
@@ -53,7 +58,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptAction, myConceptAlert, myConceptArea, myConceptCondition, myConceptConditional, myConceptCoordinateAreaDefinition, myConceptDataLifeTime, myConceptDataStoragePolicy, myConceptEvent, myConceptEvents, myConceptExpression, myConceptExpressions, myConceptGPSCoordinate, myConceptGeneratesEvent, myConceptPolicies, myConceptPoliciesKeyWord, myConceptPosition, myConceptReaction, myConceptRecording, myConceptRule, myConceptSensibility, myConceptSensor, myConceptSensors, myConceptSensorsAreaDefinition, myConceptSoundRecordingPolicy, myConceptSoundRecordingSolution, myConceptStorage, myConceptTrigger, myConceptTriggerWhen, myConceptType, myConceptZone, myConceptZoneKeyWord, myConceptZones);
+    return Arrays.asList(myConceptAction, myConceptAlert, myConceptAllowStorage, myConceptArea, myConceptCondition, myConceptConditional, myConceptCoordinateAreaDefinition, myConceptDataLifeTime, myConceptDataStoragePolicy, myConceptDisableStorage, myConceptDisplay, myConceptEvent, myConceptEvents, myConceptExpression, myConceptExpressions, myConceptGPSCoordinate, myConceptGeneratesEvent, myConceptOneLineConditional, myConceptPolicies, myConceptPoliciesKeyWord, myConceptPosition, myConceptRadio, myConceptReaction, myConceptRecording, myConceptRule, myConceptSensibility, myConceptSensor, myConceptSensors, myConceptSensorsAreaDefinition, myConceptSoundRecordingPolicy, myConceptSoundRecordingSolution, myConceptStorage, myConceptTrigger, myConceptTriggerWhen, myConceptType, myConceptZone, myConceptZoneKeyWord, myConceptZones);
   }
 
   @Override
@@ -64,6 +69,8 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
         return myConceptAction;
       case LanguageConceptSwitch.Alert:
         return myConceptAlert;
+      case LanguageConceptSwitch.AllowStorage:
+        return myConceptAllowStorage;
       case LanguageConceptSwitch.Area:
         return myConceptArea;
       case LanguageConceptSwitch.Condition:
@@ -76,6 +83,10 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
         return myConceptDataLifeTime;
       case LanguageConceptSwitch.DataStoragePolicy:
         return myConceptDataStoragePolicy;
+      case LanguageConceptSwitch.DisableStorage:
+        return myConceptDisableStorage;
+      case LanguageConceptSwitch.Display:
+        return myConceptDisplay;
       case LanguageConceptSwitch.Event:
         return myConceptEvent;
       case LanguageConceptSwitch.Events:
@@ -88,12 +99,16 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
         return myConceptGPSCoordinate;
       case LanguageConceptSwitch.GeneratesEvent:
         return myConceptGeneratesEvent;
+      case LanguageConceptSwitch.OneLineConditional:
+        return myConceptOneLineConditional;
       case LanguageConceptSwitch.Policies:
         return myConceptPolicies;
       case LanguageConceptSwitch.PoliciesKeyWord:
         return myConceptPoliciesKeyWord;
       case LanguageConceptSwitch.Position:
         return myConceptPosition;
+      case LanguageConceptSwitch.Radio:
+        return myConceptRadio;
       case LanguageConceptSwitch.Reaction:
         return myConceptReaction;
       case LanguageConceptSwitch.Recording:
@@ -150,7 +165,18 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.super_("SoundLn.structure.Action", 0x1cb3be812ce745bcL, 0xb95047f9080cab09L, 0x247d975d2965675L);
     b.origin("r:b5550555-b3bc-4782-a6c7-5f089d01e8cd(SoundLn.structure)/6294520447283733797");
     b.version(2);
+    b.prop("personToAlert", 0x624ac48592f29b4fL, "7082689441968593743");
+    b.prop("alertType", 0x624ac48592f3fc50L, "7082689441968684112");
     b.alias("alert");
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForAllowStorage() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("SoundLn", "AllowStorage", 0x1cb3be812ce745bcL, 0xb95047f9080cab09L, 0x624ac4859305ee48L);
+    b.class_(false, false, false);
+    b.super_("SoundLn.structure.Action", 0x1cb3be812ce745bcL, 0xb95047f9080cab09L, 0x247d975d2965675L);
+    b.origin("r:b5550555-b3bc-4782-a6c7-5f089d01e8cd(SoundLn.structure)/7082689441969860168");
+    b.version(2);
+    b.alias("allow");
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForArea() {
@@ -212,6 +238,26 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.alias("dataStoragePolicy");
     return b.create();
   }
+  private static ConceptDescriptor createDescriptorForDisableStorage() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("SoundLn", "DisableStorage", 0x1cb3be812ce745bcL, 0xb95047f9080cab09L, 0x624ac4859305ee62L);
+    b.class_(false, false, false);
+    b.super_("SoundLn.structure.Action", 0x1cb3be812ce745bcL, 0xb95047f9080cab09L, 0x247d975d2965675L);
+    b.origin("r:b5550555-b3bc-4782-a6c7-5f089d01e8cd(SoundLn.structure)/7082689441969860194");
+    b.version(2);
+    b.alias("disable");
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForDisplay() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("SoundLn", "Display", 0x1cb3be812ce745bcL, 0xb95047f9080cab09L, 0x624ac48592f74879L);
+    b.class_(false, false, false);
+    b.super_("SoundLn.structure.Action", 0x1cb3be812ce745bcL, 0xb95047f9080cab09L, 0x247d975d2965675L);
+    b.origin("r:b5550555-b3bc-4782-a6c7-5f089d01e8cd(SoundLn.structure)/7082689441968900217");
+    b.version(2);
+    b.prop("messageText", 0x624ac48592f7487aL, "7082689441968900218");
+    b.prop("deviceName", 0x624ac48592f7487cL, "7082689441968900220");
+    b.alias("display");
+    return b.create();
+  }
   private static ConceptDescriptor createDescriptorForEvent() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("SoundLn", "Event", 0x1cb3be812ce745bcL, 0xb95047f9080cab09L, 0x6d92a9097485f4c0L);
     b.class_(false, false, false);
@@ -271,6 +317,15 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.alias("generates event");
     return b.create();
   }
+  private static ConceptDescriptor createDescriptorForOneLineConditional() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("SoundLn", "OneLineConditional", 0x1cb3be812ce745bcL, 0xb95047f9080cab09L, 0x624ac485930533b2L);
+    b.class_(false, false, false);
+    b.super_("SoundLn.structure.Conditional", 0x1cb3be812ce745bcL, 0xb95047f9080cab09L, 0x247d975d2965655L);
+    b.origin("r:b5550555-b3bc-4782-a6c7-5f089d01e8cd(SoundLn.structure)/7082689441969812402");
+    b.version(2);
+    b.alias("if");
+    return b.create();
+  }
   private static ConceptDescriptor createDescriptorForPolicies() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("SoundLn", "Policies", 0x1cb3be812ce745bcL, 0xb95047f9080cab09L, 0x575aa0ff3bc79946L);
     b.class_(false, false, false);
@@ -296,6 +351,16 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.version(2);
     b.aggregate("gpsCoordinate", 0x624ac48592d8b838L).target(0x1cb3be812ce745bcL, 0xb95047f9080cab09L, 0x624ac48592d8b7aaL).optional(true).ordered(true).multiple(false).origin("7082689441966897208").done();
     b.alias("position");
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForRadio() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("SoundLn", "Radio", 0x1cb3be812ce745bcL, 0xb95047f9080cab09L, 0x624ac48592f5f872L);
+    b.class_(false, false, false);
+    b.super_("SoundLn.structure.Action", 0x1cb3be812ce745bcL, 0xb95047f9080cab09L, 0x247d975d2965675L);
+    b.origin("r:b5550555-b3bc-4782-a6c7-5f089d01e8cd(SoundLn.structure)/7082689441968814194");
+    b.version(2);
+    b.prop("property", 0x624ac48592f5f873L, "7082689441968814195");
+    b.alias("radio");
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForReaction() {
@@ -404,7 +469,9 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.class_(false, false, false);
     b.origin("r:b5550555-b3bc-4782-a6c7-5f089d01e8cd(SoundLn.structure)/6294520447283730668");
     b.version(2);
-    b.prop("type", 0x537d330de36fa891L, "6016020811980187793");
+    b.aggregate("allow", 0x624ac4859305ee77L).target(0x1cb3be812ce745bcL, 0xb95047f9080cab09L, 0x624ac4859305ee48L).optional(true).ordered(true).multiple(false).origin("7082689441969860215").done();
+    b.aggregate("disable", 0x624ac4859305ee79L).target(0x1cb3be812ce745bcL, 0xb95047f9080cab09L, 0x624ac4859305ee62L).optional(true).ordered(true).multiple(false).origin("7082689441969860217").done();
+    b.aggregate("onelineCond", 0x624ac4859305f0deL).target(0x1cb3be812ce745bcL, 0xb95047f9080cab09L, 0x624ac485930533b2L).optional(true).ordered(true).multiple(false).origin("7082689441969860830").done();
     b.alias("storage");
     return b.create();
   }

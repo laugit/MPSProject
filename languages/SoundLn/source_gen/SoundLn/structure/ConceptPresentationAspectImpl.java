@@ -11,21 +11,26 @@ import jetbrains.mps.smodel.runtime.ConceptPresentationBuilder;
 public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase {
   private ConceptPresentation props_Action;
   private ConceptPresentation props_Alert;
+  private ConceptPresentation props_AllowStorage;
   private ConceptPresentation props_Area;
   private ConceptPresentation props_Condition;
   private ConceptPresentation props_Conditional;
   private ConceptPresentation props_CoordinateAreaDefinition;
   private ConceptPresentation props_DataLifeTime;
   private ConceptPresentation props_DataStoragePolicy;
+  private ConceptPresentation props_DisableStorage;
+  private ConceptPresentation props_Display;
   private ConceptPresentation props_Event;
   private ConceptPresentation props_Events;
   private ConceptPresentation props_Expression;
   private ConceptPresentation props_Expressions;
   private ConceptPresentation props_GPSCoordinate;
   private ConceptPresentation props_GeneratesEvent;
+  private ConceptPresentation props_OneLineConditional;
   private ConceptPresentation props_Policies;
   private ConceptPresentation props_PoliciesKeyWord;
   private ConceptPresentation props_Position;
+  private ConceptPresentation props_Radio;
   private ConceptPresentation props_Reaction;
   private ConceptPresentation props_Recording;
   private ConceptPresentation props_Rule;
@@ -62,6 +67,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_Alert = cpb.create();
         }
         return props_Alert;
+      case LanguageConceptSwitch.AllowStorage:
+        if (props_AllowStorage == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("allow");
+          props_AllowStorage = cpb.create();
+        }
+        return props_AllowStorage;
       case LanguageConceptSwitch.Area:
         if (props_Area == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -104,6 +116,20 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_DataStoragePolicy = cpb.create();
         }
         return props_DataStoragePolicy;
+      case LanguageConceptSwitch.DisableStorage:
+        if (props_DisableStorage == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("disable");
+          props_DisableStorage = cpb.create();
+        }
+        return props_DisableStorage;
+      case LanguageConceptSwitch.Display:
+        if (props_Display == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("display");
+          props_Display = cpb.create();
+        }
+        return props_Display;
       case LanguageConceptSwitch.Event:
         if (props_Event == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -146,6 +172,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_GeneratesEvent = cpb.create();
         }
         return props_GeneratesEvent;
+      case LanguageConceptSwitch.OneLineConditional:
+        if (props_OneLineConditional == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("if");
+          props_OneLineConditional = cpb.create();
+        }
+        return props_OneLineConditional;
       case LanguageConceptSwitch.Policies:
         if (props_Policies == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -167,6 +200,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_Position = cpb.create();
         }
         return props_Position;
+      case LanguageConceptSwitch.Radio:
+        if (props_Radio == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("radio");
+          props_Radio = cpb.create();
+        }
+        return props_Radio;
       case LanguageConceptSwitch.Reaction:
         if (props_Reaction == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();

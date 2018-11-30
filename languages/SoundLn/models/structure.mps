@@ -237,10 +237,23 @@
     <property role="TrG5h" value="Storage" />
     <property role="34LRSv" value="storage" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyi" id="5dXcKRzrUyh" role="1TKVEl">
-      <property role="IQ2nx" value="6016020811980187793" />
-      <property role="TrG5h" value="type" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    <node concept="1TJgyj" id="69aL8mj1uTR" role="1TKVEi">
+      <property role="IQ2ns" value="7082689441969860215" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="allow" />
+      <ref role="20lvS9" node="69aL8mj1uT8" resolve="AllowStorage" />
+    </node>
+    <node concept="1TJgyj" id="69aL8mj1uTT" role="1TKVEi">
+      <property role="IQ2ns" value="7082689441969860217" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="disable" />
+      <ref role="20lvS9" node="69aL8mj1uTy" resolve="DisableStorage" />
+    </node>
+    <node concept="1TJgyj" id="69aL8mj1v3u" role="1TKVEi">
+      <property role="IQ2ns" value="7082689441969860830" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="onelineCond" />
+      <ref role="20lvS9" node="69aL8mj1jeM" resolve="OneLineConditional" />
     </node>
   </node>
   <node concept="1TIwiD" id="5tqCfWVLTzH">
@@ -430,6 +443,16 @@
     <property role="TrG5h" value="Alert" />
     <property role="34LRSv" value="alert" />
     <ref role="1TJDcQ" node="97Qnni__pP" resolve="Action" />
+    <node concept="1TJgyi" id="69aL8miWDHf" role="1TKVEl">
+      <property role="IQ2nx" value="7082689441968593743" />
+      <property role="TrG5h" value="personToAlert" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyi" id="69aL8miWZLg" role="1TKVEl">
+      <property role="IQ2nx" value="7082689441968684112" />
+      <property role="TrG5h" value="alertType" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
   </node>
   <node concept="1TIwiD" id="5dXcKRzqvLQ">
     <property role="EcuMT" value="6016020811979816054" />
@@ -614,6 +637,51 @@
       <property role="TrG5h" value="whenCond" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
+  </node>
+  <node concept="1TIwiD" id="69aL8miXvxM">
+    <property role="EcuMT" value="7082689441968814194" />
+    <property role="TrG5h" value="Radio" />
+    <property role="34LRSv" value="radio" />
+    <ref role="1TJDcQ" node="97Qnni__pP" resolve="Action" />
+    <node concept="1TJgyi" id="69aL8miXvxN" role="1TKVEl">
+      <property role="IQ2nx" value="7082689441968814195" />
+      <property role="TrG5h" value="property" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="69aL8miXOxT">
+    <property role="EcuMT" value="7082689441968900217" />
+    <property role="TrG5h" value="Display" />
+    <property role="34LRSv" value="display" />
+    <ref role="1TJDcQ" node="97Qnni__pP" resolve="Action" />
+    <node concept="1TJgyi" id="69aL8miXOxU" role="1TKVEl">
+      <property role="IQ2nx" value="7082689441968900218" />
+      <property role="TrG5h" value="messageText" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyi" id="69aL8miXOxW" role="1TKVEl">
+      <property role="IQ2nx" value="7082689441968900220" />
+      <property role="TrG5h" value="deviceName" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="69aL8mj1jeM">
+    <property role="EcuMT" value="7082689441969812402" />
+    <property role="TrG5h" value="OneLineConditional" />
+    <property role="34LRSv" value="if" />
+    <ref role="1TJDcQ" node="97Qnni__pl" resolve="Conditional" />
+  </node>
+  <node concept="1TIwiD" id="69aL8mj1uT8">
+    <property role="EcuMT" value="7082689441969860168" />
+    <property role="TrG5h" value="AllowStorage" />
+    <property role="34LRSv" value="allow" />
+    <ref role="1TJDcQ" node="97Qnni__pP" resolve="Action" />
+  </node>
+  <node concept="1TIwiD" id="69aL8mj1uTy">
+    <property role="EcuMT" value="7082689441969860194" />
+    <property role="TrG5h" value="DisableStorage" />
+    <property role="34LRSv" value="disable" />
+    <ref role="1TJDcQ" node="97Qnni__pP" resolve="Action" />
   </node>
 </model>
 

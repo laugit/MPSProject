@@ -7,7 +7,10 @@
   <imports />
   <registry>
     <language id="1cb3be81-2ce7-45bc-b950-47f9080cab09" name="SoundLn">
-      <concept id="7895558954808636608" name="SoundLn.structure.Event" flags="ng" index="p5PR9" />
+      <concept id="7895558954808636608" name="SoundLn.structure.Event" flags="ng" index="p5PR9">
+        <property id="7895558954808636609" name="name" index="p5PR8" />
+        <child id="164339011489781334" name="reaction" index="3gOoWz" />
+      </concept>
       <concept id="7895558954808597035" name="SoundLn.structure.Sensor" flags="ng" index="p5Zcy">
         <property id="7895558954808597036" name="name" index="p5Zc_" />
         <child id="7895558954808636611" name="position" index="p5PRa" />
@@ -26,12 +29,21 @@
       <concept id="6016020811979816054" name="SoundLn.structure.Expressions" flags="ng" index="2K5cXV">
         <child id="6016020811979816057" name="expressions" index="2K5cXO" />
       </concept>
+      <concept id="164339011489781333" name="SoundLn.structure.Conditional" flags="ng" index="3gOoWw">
+        <property id="6294520447283683756" name="ifCond" index="1GB45j" />
+        <child id="164339011489781371" name="action1" index="3gOoWe" />
+        <child id="164339011490161311" name="action2" index="3gQZJE" />
+      </concept>
+      <concept id="6294520447283733797" name="SoundLn.structure.Alert" flags="ng" index="1GBgnq">
+        <property id="7082689441968593743" name="personToAlert" index="3KI5Za" />
+        <property id="7082689441968684112" name="alertType" index="3KIjzl" />
+      </concept>
       <concept id="6294520447283730669" name="SoundLn.structure.DataLifeTime" flags="ng" index="1GBjwi">
         <property id="6016020811980416415" name="number" index="2K3xqi" />
         <property id="6016020811980416417" name="timeUnity" index="2K3xqG" />
       </concept>
       <concept id="6294520447283730668" name="SoundLn.structure.Storage" flags="ng" index="1GBjwj">
-        <property id="6016020811980187793" name="type" index="2K4DIs" />
+        <child id="7082689441969860830" name="onelineCond" index="3LjNhr" />
       </concept>
       <concept id="6294520447283730667" name="SoundLn.structure.Type" flags="ng" index="1GBjwk">
         <property id="6016020811980124822" name="type" index="2K4S6r" />
@@ -55,6 +67,9 @@
         <child id="6294520447283730627" name="condition" index="1GBjwW" />
         <child id="6294520447283730769" name="generatesEvent" index="1GBjAI" />
         <child id="6294520447283730761" name="trigger" index="1GBjAQ" />
+      </concept>
+      <concept id="6294520447283730885" name="SoundLn.structure.Reaction" flags="ng" index="1GBj$U">
+        <child id="6294520447283730886" name="condAction" index="1GBj$T" />
       </concept>
       <concept id="6294520447283730882" name="SoundLn.structure.Events" flags="ng" index="1GBj$X">
         <child id="6294520447283730883" name="events" index="1GBj$W" />
@@ -121,6 +136,9 @@
       <concept id="7082689441968339794" name="SoundLn.structure.TriggerWhen" flags="ng" index="3KD7Zn">
         <property id="7082689441968339795" name="whenCond" index="3KD7Zm" />
       </concept>
+      <concept id="7082689441969860168" name="SoundLn.structure.AllowStorage" flags="ng" index="3LjMFd" />
+      <concept id="7082689441969860194" name="SoundLn.structure.DisableStorage" flags="ng" index="3LjMFB" />
+      <concept id="7082689441969812402" name="SoundLn.structure.OneLineConditional" flags="ng" index="3LjZsR" />
     </language>
   </registry>
   <node concept="3KBiaS" id="69aL8miQbjc">
@@ -136,6 +154,10 @@
       <node concept="2K5cXQ" id="69aL8miVFHe" role="2K5cXO">
         <property role="2K5cXL" value="atBase()" />
         <property role="2K5cXN" value="GPSCoordinate in range 42.04648, 1.31 to 45.64, 2.34" />
+      </node>
+      <node concept="2K5cXQ" id="69aL8miWZLb" role="2K5cXO">
+        <property role="2K5cXL" value="responsible" />
+        <property role="2K5cXN" value="04000000" />
       </node>
     </node>
     <node concept="p5Zcz" id="69aL8miQbjf" role="3KBib5">
@@ -158,12 +180,16 @@
         <node concept="1GBjwk" id="69aL8miQbjE" role="1GBjwc">
           <property role="2K4S6r" value="rawSoundData" />
         </node>
-        <node concept="1GBjwj" id="69aL8miQbuw" role="1GBjwx">
-          <property role="2K4DIs" value="if environment.eu disable else allow" />
-        </node>
         <node concept="1GBjwi" id="69aL8miQbuy" role="1GBjwr">
           <property role="2K3xqi" value="3" />
           <property role="2K3xqG" value="months" />
+        </node>
+        <node concept="1GBjwj" id="69aL8mj2qV3" role="1GBjwx">
+          <node concept="3LjZsR" id="69aL8mj43bA" role="3LjNhr">
+            <property role="1GB45j" value="Environment.eu" />
+            <node concept="3LjMFB" id="69aL8mj43bC" role="3gOoWe" />
+            <node concept="3LjMFd" id="69aL8mj43bK" role="3gQZJE" />
+          </node>
         </node>
       </node>
     </node>
@@ -276,7 +302,18 @@
       </node>
     </node>
     <node concept="1GBj$X" id="69aL8miQbjp" role="3KBibs">
-      <node concept="p5PR9" id="69aL8miWlan" role="1GBj$W" />
+      <node concept="p5PR9" id="69aL8miWlan" role="1GBj$W">
+        <property role="p5PR8" value="potentialIntrusion" />
+        <node concept="1GBj$U" id="69aL8miWDGU" role="3gOoWz">
+          <node concept="3gOoWw" id="69aL8miWDH0" role="1GBj$T">
+            <property role="1GB45j" value="atBase()" />
+            <node concept="1GBgnq" id="69aL8miWZL9" role="3gOoWe">
+              <property role="3KI5Za" value="responsible" />
+              <property role="3KIjzl" value="call" />
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
   </node>
 </model>

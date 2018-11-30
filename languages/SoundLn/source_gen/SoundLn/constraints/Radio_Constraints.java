@@ -13,23 +13,23 @@ import jetbrains.mps.smodel.adapter.ids.MetaIdFactory;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 
-public class Storage_Constraints extends BaseConstraintsDescriptor {
-  public Storage_Constraints() {
-    super(MetaAdapterFactory.getConcept(0x1cb3be812ce745bcL, 0xb95047f9080cab09L, 0x575aa0ff3bc798ecL, "SoundLn.structure.Storage"));
+public class Radio_Constraints extends BaseConstraintsDescriptor {
+  public Radio_Constraints() {
+    super(MetaAdapterFactory.getConcept(0x1cb3be812ce745bcL, 0xb95047f9080cab09L, 0x624ac48592f5f872L, "SoundLn.structure.Radio"));
   }
 
   @Override
   protected Map<SProperty, PropertyConstraintsDescriptor> getSpecifiedProperties() {
     Map<SProperty, PropertyConstraintsDescriptor> properties = new HashMap<SProperty, PropertyConstraintsDescriptor>();
-    properties.put(MetaAdapterFactory.getProperty(0x1cb3be812ce745bcL, 0xb95047f9080cab09L, 0x575aa0ff3bc798ecL, 0x537d330de36fa891L, "type"), new BasePropertyConstraintsDescriptor(MetaIdFactory.propId(0x1cb3be812ce745bcL, 0xb95047f9080cab09L, 0x575aa0ff3bc798ecL, 0x537d330de36fa891L), this) {
+    properties.put(MetaAdapterFactory.getProperty(0x1cb3be812ce745bcL, 0xb95047f9080cab09L, 0x624ac48592f5f872L, 0x624ac48592f5f873L, "property"), new BasePropertyConstraintsDescriptor(MetaIdFactory.propId(0x1cb3be812ce745bcL, 0xb95047f9080cab09L, 0x624ac48592f5f872L, 0x624ac48592f5f873L), this) {
       @Override
       public boolean hasOwnValidator() {
         return true;
       }
       @Override
       public boolean validateValue(SNode node, String propertyValue) {
-        String propertyName = "type";
-        return (SPropertyOperations.getString(propertyValue)).equals("allow") || (SPropertyOperations.getString(propertyValue)).equals("disable") || (SPropertyOperations.getString(propertyValue)).matches("if (.*) (allow|disable) else (allow|disable)");
+        String propertyName = "property";
+        return (SPropertyOperations.getString(propertyValue)).equals("volumeDown") || (SPropertyOperations.getString(propertyValue)).equals("nextTrack") || (SPropertyOperations.getString(propertyValue)).equals("changeFMStation") || (SPropertyOperations.getString(propertyValue)).equals("replayCD");
       }
     });
     return properties;
