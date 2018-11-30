@@ -6,16 +6,7 @@
     </option>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="51ad32fc-15c9-41d1-9608-102da32b3d30" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.mps/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.mps/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/SoundLn/classes_gen/SoundLn/editor/Rule_EditorBuilder_a.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/SoundLn/classes_gen/SoundLn/editor/Rule_EditorBuilder_a.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/SoundLn/classes_gen/SoundLn/editor/trace.info" beforeDir="false" afterPath="$PROJECT_DIR$/languages/SoundLn/classes_gen/SoundLn/editor/trace.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/SoundLn/models/editor.mps" beforeDir="false" afterPath="$PROJECT_DIR$/languages/SoundLn/models/editor.mps" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/SoundLn/source_gen.caches/SoundLn/editor/generated" beforeDir="false" afterPath="$PROJECT_DIR$/languages/SoundLn/source_gen.caches/SoundLn/editor/generated" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/SoundLn/source_gen.caches/SoundLn/generated" beforeDir="false" afterPath="$PROJECT_DIR$/languages/SoundLn/source_gen.caches/SoundLn/generated" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/SoundLn/source_gen/SoundLn/editor/Rule_EditorBuilder_a.java" beforeDir="false" afterPath="$PROJECT_DIR$/languages/SoundLn/source_gen/SoundLn/editor/Rule_EditorBuilder_a.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/SoundLn/source_gen/SoundLn/editor/trace.info" beforeDir="false" afterPath="$PROJECT_DIR$/languages/SoundLn/source_gen/SoundLn/editor/trace.info" afterDir="false" />
-    </list>
+    <list default="true" id="51ad32fc-15c9-41d1-9608-102da32b3d30" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -143,7 +134,7 @@
           <entry key="Sensor" value="7" />
           <entry key="Sensors" value="3" />
           <entry key="SensorsAreaDefinition" value="1" />
-          <entry key="Sound" value="1" />
+          <entry key="Sound" value="2" />
           <entry key="SoundDetector" value="6" />
           <entry key="SoundFrequency" value="1" />
           <entry key="SoundLevel" value="1" />
@@ -172,7 +163,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="MPS_NODE" value="296" />
+          <entry key="MPS_NODE" value="297" />
           <entry key="PLAIN_TEXT" value="2" />
         </counts>
       </usages-collector>
@@ -184,7 +175,7 @@
         <entry file="mps://node://SoundSol/SoundSol.mod/soundRecordingSolution">
           <provider selected="true" editor-type-id="MPSFileEditor">
             <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-              <memento saveSessionState="false" viewPositionX="0" viewPositionY="1259">
+              <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
                 <selectionStack>
                   <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
                     <property name="hasNonTrivialSelection" value="false" />
@@ -201,7 +192,7 @@
                 <foldable />
                 <restoreAlways />
               </memento>
-              <inspectorMemento currentlyEditedNode="r:81b04a6b-d84d-4d20-9c97-0cd9546e0269(SoundLn.editor)/7082689441972732658" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+              <inspectorMemento currentlyEditedNode="r:b5550555-b3bc-4782-a6c7-5f089d01e8cd(SoundLn.structure)/7082689441970667391" saveSessionState="false" viewPositionX="0" viewPositionY="0">
                 <selectionStack />
                 <errorMarkers />
                 <transactionalProperties />
@@ -209,6 +200,40 @@
                 <restoreAlways />
                 <enabledHints />
               </inspectorMemento>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="mps://node://SoundLn/SoundLn.structure/Sound">
+          <provider selected="true" editor-type-id="MPSFileEditor">
+            <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
+              <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
+                <selectionStack>
+                  <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                    <property name="hasNonTrivialSelection" value="false" />
+                    <property name="caretX" value="119" />
+                    <property name="caretXRelative" value="40" />
+                    <property name="sideSelectDirection" value="NONE" />
+                    <cellInfo cellId="name">
+                      <node node_reference="r:b5550555-b3bc-4782-a6c7-5f089d01e8cd(SoundLn.structure)/7082689441970667391" />
+                    </cellInfo>
+                  </stackElement>
+                </selectionStack>
+                <errorMarkers />
+                <transactionalProperties />
+                <foldable />
+                <restoreAlways />
+              </memento>
+              <inspectorMemento currentlyEditedNode="r:b5550555-b3bc-4782-a6c7-5f089d01e8cd(SoundLn.structure)/7082689441970667391" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+                <selectionStack />
+                <errorMarkers />
+                <transactionalProperties />
+                <foldable />
+                <restoreAlways />
+                <enabledHints />
+              </inspectorMemento>
+              <node node_ref="r:b5550555-b3bc-4782-a6c7-5f089d01e8cd(SoundLn.structure)/7082689441970667391" />
             </state>
           </provider>
         </entry>
@@ -234,7 +259,7 @@
                 <foldable />
                 <restoreAlways />
               </memento>
-              <inspectorMemento currentlyEditedNode="r:81b04a6b-d84d-4d20-9c97-0cd9546e0269(SoundLn.editor)/7082689441972732658" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+              <inspectorMemento currentlyEditedNode="r:b5550555-b3bc-4782-a6c7-5f089d01e8cd(SoundLn.structure)/7082689441970667391" saveSessionState="false" viewPositionX="0" viewPositionY="0">
                 <selectionStack />
                 <errorMarkers />
                 <transactionalProperties />
@@ -268,7 +293,7 @@
                 <foldable />
                 <restoreAlways />
               </memento>
-              <inspectorMemento currentlyEditedNode="r:81b04a6b-d84d-4d20-9c97-0cd9546e0269(SoundLn.editor)/7082689441972732658" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+              <inspectorMemento currentlyEditedNode="r:b5550555-b3bc-4782-a6c7-5f089d01e8cd(SoundLn.structure)/7082689441970667391" saveSessionState="false" viewPositionX="0" viewPositionY="0">
                 <selectionStack />
                 <errorMarkers />
                 <transactionalProperties />
@@ -302,7 +327,7 @@
                 <foldable />
                 <restoreAlways />
               </memento>
-              <inspectorMemento currentlyEditedNode="r:81b04a6b-d84d-4d20-9c97-0cd9546e0269(SoundLn.editor)/7082689441972732658" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+              <inspectorMemento currentlyEditedNode="r:b5550555-b3bc-4782-a6c7-5f089d01e8cd(SoundLn.structure)/7082689441970667391" saveSessionState="false" viewPositionX="0" viewPositionY="0">
                 <selectionStack />
                 <errorMarkers />
                 <transactionalProperties />
@@ -336,7 +361,7 @@
                 <foldable />
                 <restoreAlways />
               </memento>
-              <inspectorMemento currentlyEditedNode="r:81b04a6b-d84d-4d20-9c97-0cd9546e0269(SoundLn.editor)/7082689441972732658" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+              <inspectorMemento currentlyEditedNode="r:b5550555-b3bc-4782-a6c7-5f089d01e8cd(SoundLn.structure)/7082689441970667391" saveSessionState="false" viewPositionX="0" viewPositionY="0">
                 <selectionStack />
                 <errorMarkers />
                 <transactionalProperties />
@@ -370,7 +395,7 @@
                 <foldable />
                 <restoreAlways />
               </memento>
-              <inspectorMemento currentlyEditedNode="r:81b04a6b-d84d-4d20-9c97-0cd9546e0269(SoundLn.editor)/7082689441972732658" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+              <inspectorMemento currentlyEditedNode="r:b5550555-b3bc-4782-a6c7-5f089d01e8cd(SoundLn.structure)/7082689441970667391" saveSessionState="false" viewPositionX="0" viewPositionY="0">
                 <selectionStack />
                 <errorMarkers />
                 <transactionalProperties />
@@ -383,10 +408,10 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="mps://node://SoundLn/SoundLn.structure/Rule">
           <provider selected="true" editor-type-id="MPSFileEditor">
-            <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState" editorFocused="true">
+            <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
               <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
                 <selectionStack>
                   <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
@@ -404,7 +429,7 @@
                 <foldable />
                 <restoreAlways />
               </memento>
-              <inspectorMemento currentlyEditedNode="r:81b04a6b-d84d-4d20-9c97-0cd9546e0269(SoundLn.editor)/7082689441972732658" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+              <inspectorMemento currentlyEditedNode="r:b5550555-b3bc-4782-a6c7-5f089d01e8cd(SoundLn.structure)/7082689441970667391" saveSessionState="false" viewPositionX="0" viewPositionY="0">
                 <selectionStack />
                 <errorMarkers />
                 <transactionalProperties />
@@ -438,7 +463,7 @@
                 <foldable />
                 <restoreAlways />
               </memento>
-              <inspectorMemento currentlyEditedNode="r:81b04a6b-d84d-4d20-9c97-0cd9546e0269(SoundLn.editor)/7082689441972732658" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+              <inspectorMemento currentlyEditedNode="r:b5550555-b3bc-4782-a6c7-5f089d01e8cd(SoundLn.structure)/7082689441970667391" saveSessionState="false" viewPositionX="0" viewPositionY="0">
                 <selectionStack />
                 <errorMarkers />
                 <transactionalProperties />
@@ -478,7 +503,7 @@
                 </foldable>
                 <restoreAlways />
               </memento>
-              <inspectorMemento currentlyEditedNode="r:81b04a6b-d84d-4d20-9c97-0cd9546e0269(SoundLn.editor)/7082689441972732658" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+              <inspectorMemento currentlyEditedNode="r:b5550555-b3bc-4782-a6c7-5f089d01e8cd(SoundLn.structure)/7082689441970667391" saveSessionState="false" viewPositionX="0" viewPositionY="0">
                 <selectionStack />
                 <errorMarkers />
                 <transactionalProperties />
@@ -487,51 +512,6 @@
                 <enabledHints />
               </inspectorMemento>
               <node node_ref="r:9cfaefc3-3548-4b53-ad7d-f37e024e28f9(SoundLn.constraints)/7082689441970851486" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="mps://node://SoundLn/SoundLn.structure/SoundRepetition">
-          <provider selected="true" editor-type-id="MPSFileEditor">
-            <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
-              <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-                <selectionStack>
-                  <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                    <property name="hasNonTrivialSelection" value="false" />
-                    <property name="caretX" value="303" />
-                    <property name="caretXRelative" value="120" />
-                    <property name="sideSelectDirection" value="NONE" />
-                    <cellInfo cellId="property_name">
-                      <node node_reference="r:9cfaefc3-3548-4b53-ad7d-f37e024e28f9(SoundLn.constraints)/7082689441970717400" />
-                    </cellInfo>
-                  </stackElement>
-                </selectionStack>
-                <errorMarkers />
-                <transactionalProperties />
-                <foldable>
-                  <collapsedElement isCollapsed="false">
-                    <cellIdElement cellId="Collection_trik0f_b0">
-                      <node node_reference="r:9cfaefc3-3548-4b53-ad7d-f37e024e28f9(SoundLn.constraints)/7082689441970751868" />
-                    </cellIdElement>
-                  </collapsedElement>
-                  <collapsedElement isCollapsed="false">
-                    <cellIdElement cellId="Collection_trik0f_b0">
-                      <node node_reference="r:9cfaefc3-3548-4b53-ad7d-f37e024e28f9(SoundLn.constraints)/7082689441970717403" />
-                    </cellIdElement>
-                  </collapsedElement>
-                </foldable>
-                <restoreAlways />
-              </memento>
-              <inspectorMemento currentlyEditedNode="r:81b04a6b-d84d-4d20-9c97-0cd9546e0269(SoundLn.editor)/7082689441972732658" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-                <selectionStack />
-                <errorMarkers />
-                <transactionalProperties />
-                <foldable />
-                <restoreAlways />
-                <enabledHints />
-              </inspectorMemento>
-              <node node_ref="r:9cfaefc3-3548-4b53-ad7d-f37e024e28f9(SoundLn.constraints)/7082689441970717400" />
             </state>
           </provider>
         </entry>
@@ -643,53 +623,7 @@
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="r:9cfaefc3-3548-4b53-ad7d-f37e024e28f9(SoundLn.constraints) in IdeaFile[file://C:/Users/hp/Desktop/programmation/MDE/Projets_MPS/languages/SoundLn/models/constraints.mps]" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="f559ed3f-eebf-4263-a0f9-0b1ca67584a8" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="f559ed3f-eebf-4263-a0f9-0b1ca67584a8" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SoundSol" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="r:aa676b1f-632c-4ac4-8736-5d48f566aa8c(SoundSol.mod) in IdeaFile[file://C:/Users/hp/Desktop/programmation/MDE/Projets_MPS/solutions/SoundSol/models/mod.mps]" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="1cb3be81-2ce7-45bc-b950-47f9080cab09(SoundLn)" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SoundLn#01" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="r:fa3b93a0-cb5d-4b20-b6ea-bfae402a3cfe(main@generator) in IdeaFile[file://C:/Users/hp/Desktop/programmation/MDE/Projets_MPS/languages/SoundLn/generator/template/main@generator.mps]" />
+              <option name="myItemId" value="r:81b04a6b-d84d-4d20-9c97-0cd9546e0269(SoundLn.editor) in IdeaFile[file://C:/Users/hp/Desktop/programmation/MDE/Projets_MPS/languages/SoundLn/models/editor.mps]" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
@@ -732,6 +666,34 @@
               <option name="myItemId" value="Project" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="1cb3be81-2ce7-45bc-b950-47f9080cab09(SoundLn)" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SoundLn#01" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="r:fa3b93a0-cb5d-4b20-b6ea-bfae402a3cfe(main@generator) in IdeaFile[file://C:/Users/hp/Desktop/programmation/MDE/Projets_MPS/languages/SoundLn/generator/template/main@generator.mps]" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="f559ed3f-eebf-4263-a0f9-0b1ca67584a8" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -744,6 +706,52 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="r:e151966a-a994-411c-a41d-b753b6d82c20(SoundLn.typesystem) in IdeaFile[file://C:/Users/hp/Desktop/programmation/MDE/Projets_MPS/languages/SoundLn/models/typesystem.mps]" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="1cb3be81-2ce7-45bc-b950-47f9080cab09(SoundLn)" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="r:b5550555-b3bc-4782-a6c7-5f089d01e8cd(SoundLn.structure) in IdeaFile[file://C:/Users/hp/Desktop/programmation/MDE/Projets_MPS/languages/SoundLn/models/structure.mps]" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="f559ed3f-eebf-4263-a0f9-0b1ca67584a8" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SoundSol" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="r:aa676b1f-632c-4ac4-8736-5d48f566aa8c(SoundSol.mod) in IdeaFile[file://C:/Users/hp/Desktop/programmation/MDE/Projets_MPS/solutions/SoundSol/models/mod.mps]" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="1cb3be81-2ce7-45bc-b950-47f9080cab09(SoundLn)" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="r:9cfaefc3-3548-4b53-ad7d-f37e024e28f9(SoundLn.constraints) in IdeaFile[file://C:/Users/hp/Desktop/programmation/MDE/Projets_MPS/languages/SoundLn/models/constraints.mps]" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
@@ -771,21 +779,7 @@
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="1cb3be81-2ce7-45bc-b950-47f9080cab09(SoundLn)" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="r:81b04a6b-d84d-4d20-9c97-0cd9546e0269(SoundLn.editor) in IdeaFile[file://C:/Users/hp/Desktop/programmation/MDE/Projets_MPS/languages/SoundLn/models/editor.mps]" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
+          <SELECTED>
             <PATH_ELEMENT>
               <option name="myItemId" value="Project" />
               <option name="myItemType" value="" />
@@ -798,22 +792,8 @@
               <option name="myItemId" value="r:b5550555-b3bc-4782-a6c7-5f089d01e8cd(SoundLn.structure) in IdeaFile[file://C:/Users/hp/Desktop/programmation/MDE/Projets_MPS/languages/SoundLn/models/structure.mps]" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
-          </PATH>
-          <SELECTED>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="1cb3be81-2ce7-45bc-b950-47f9080cab09(SoundLn)" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="r:81b04a6b-d84d-4d20-9c97-0cd9546e0269(SoundLn.editor) in IdeaFile[file://C:/Users/hp/Desktop/programmation/MDE/Projets_MPS/languages/SoundLn/models/editor.mps]" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="6016020811980090209" />
+              <option name="myItemId" value="7082689441970667391" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </SELECTED>
@@ -1941,38 +1921,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="mps://node://SoundLn/SoundLn.structure/Sound">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="119" />
-                <property name="caretXRelative" value="40" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="name">
-                  <node node_reference="r:b5550555-b3bc-4782-a6c7-5f089d01e8cd(SoundLn.structure)/7082689441970667391" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:b5550555-b3bc-4782-a6c7-5f089d01e8cd(SoundLn.structure)/7082689441970598861" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-            <enabledHints />
-          </inspectorMemento>
-          <node node_ref="r:b5550555-b3bc-4782-a6c7-5f089d01e8cd(SoundLn.structure)/7082689441970667391" />
-        </state>
-      </provider>
-    </entry>
     <entry file="mps://node://SoundLn/SoundLn.structure/TriggerWhen">
       <provider selected="true" editor-type-id="MPSFileEditor">
         <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
@@ -2154,7 +2102,7 @@
             </foldable>
             <restoreAlways />
           </memento>
-          <inspectorMemento currentlyEditedNode="r:81b04a6b-d84d-4d20-9c97-0cd9546e0269(SoundLn.editor)/7082689441972732658" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+          <inspectorMemento currentlyEditedNode="r:b5550555-b3bc-4782-a6c7-5f089d01e8cd(SoundLn.structure)/7082689441970598861" saveSessionState="false" viewPositionX="0" viewPositionY="0">
             <selectionStack />
             <errorMarkers />
             <transactionalProperties />
@@ -2192,7 +2140,7 @@
             </foldable>
             <restoreAlways />
           </memento>
-          <inspectorMemento currentlyEditedNode="r:81b04a6b-d84d-4d20-9c97-0cd9546e0269(SoundLn.editor)/7082689441972732658" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+          <inspectorMemento currentlyEditedNode="r:b5550555-b3bc-4782-a6c7-5f089d01e8cd(SoundLn.structure)/7082689441970667391" saveSessionState="false" viewPositionX="0" viewPositionY="0">
             <selectionStack />
             <errorMarkers />
             <transactionalProperties />
@@ -2224,7 +2172,7 @@
             <foldable />
             <restoreAlways />
           </memento>
-          <inspectorMemento currentlyEditedNode="r:81b04a6b-d84d-4d20-9c97-0cd9546e0269(SoundLn.editor)/7082689441972732658" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+          <inspectorMemento currentlyEditedNode="r:b5550555-b3bc-4782-a6c7-5f089d01e8cd(SoundLn.structure)/7082689441970667391" saveSessionState="false" viewPositionX="0" viewPositionY="0">
             <selectionStack />
             <errorMarkers />
             <transactionalProperties />
@@ -2256,7 +2204,7 @@
             <foldable />
             <restoreAlways />
           </memento>
-          <inspectorMemento currentlyEditedNode="r:81b04a6b-d84d-4d20-9c97-0cd9546e0269(SoundLn.editor)/7082689441972732658" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+          <inspectorMemento currentlyEditedNode="r:b5550555-b3bc-4782-a6c7-5f089d01e8cd(SoundLn.structure)/7082689441970667391" saveSessionState="false" viewPositionX="0" viewPositionY="0">
             <selectionStack />
             <errorMarkers />
             <transactionalProperties />
@@ -2288,7 +2236,7 @@
             <foldable />
             <restoreAlways />
           </memento>
-          <inspectorMemento currentlyEditedNode="r:81b04a6b-d84d-4d20-9c97-0cd9546e0269(SoundLn.editor)/7082689441972732658" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+          <inspectorMemento currentlyEditedNode="r:b5550555-b3bc-4782-a6c7-5f089d01e8cd(SoundLn.structure)/7082689441970667391" saveSessionState="false" viewPositionX="0" viewPositionY="0">
             <selectionStack />
             <errorMarkers />
             <transactionalProperties />
@@ -2320,7 +2268,7 @@
             <foldable />
             <restoreAlways />
           </memento>
-          <inspectorMemento currentlyEditedNode="r:81b04a6b-d84d-4d20-9c97-0cd9546e0269(SoundLn.editor)/7082689441972732658" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+          <inspectorMemento currentlyEditedNode="r:b5550555-b3bc-4782-a6c7-5f089d01e8cd(SoundLn.structure)/7082689441970667391" saveSessionState="false" viewPositionX="0" viewPositionY="0">
             <selectionStack />
             <errorMarkers />
             <transactionalProperties />
@@ -2352,7 +2300,7 @@
             <foldable />
             <restoreAlways />
           </memento>
-          <inspectorMemento currentlyEditedNode="r:81b04a6b-d84d-4d20-9c97-0cd9546e0269(SoundLn.editor)/7082689441972732658" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+          <inspectorMemento currentlyEditedNode="r:b5550555-b3bc-4782-a6c7-5f089d01e8cd(SoundLn.structure)/7082689441970667391" saveSessionState="false" viewPositionX="0" viewPositionY="0">
             <selectionStack />
             <errorMarkers />
             <transactionalProperties />
@@ -2384,7 +2332,7 @@
             <foldable />
             <restoreAlways />
           </memento>
-          <inspectorMemento currentlyEditedNode="r:81b04a6b-d84d-4d20-9c97-0cd9546e0269(SoundLn.editor)/7082689441972732658" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+          <inspectorMemento currentlyEditedNode="r:b5550555-b3bc-4782-a6c7-5f089d01e8cd(SoundLn.structure)/7082689441970667391" saveSessionState="false" viewPositionX="0" viewPositionY="0">
             <selectionStack />
             <errorMarkers />
             <transactionalProperties />
@@ -2396,40 +2344,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="mps://node://SoundSol/SoundSol.mod/soundRecordingSolution">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="1259">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="89" />
-                <property name="caretXRelative" value="0" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="Constant_z0m96w_e0">
-                  <node node_reference="r:aa676b1f-632c-4ac4-8736-5d48f566aa8c(SoundSol.mod)/7082689441968339788" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:81b04a6b-d84d-4d20-9c97-0cd9546e0269(SoundLn.editor)/7082689441972732658" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-            <enabledHints />
-          </inspectorMemento>
-        </state>
-      </provider>
-    </entry>
     <entry file="mps://node://SoundLn/SoundLn.structure/Rule">
       <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState" editorFocused="true">
+        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
           <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
             <selectionStack>
               <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
@@ -2447,7 +2364,7 @@
             <foldable />
             <restoreAlways />
           </memento>
-          <inspectorMemento currentlyEditedNode="r:81b04a6b-d84d-4d20-9c97-0cd9546e0269(SoundLn.editor)/7082689441972732658" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+          <inspectorMemento currentlyEditedNode="r:b5550555-b3bc-4782-a6c7-5f089d01e8cd(SoundLn.structure)/7082689441970667391" saveSessionState="false" viewPositionX="0" viewPositionY="0">
             <selectionStack />
             <errorMarkers />
             <transactionalProperties />
@@ -2456,6 +2373,69 @@
             <enabledHints />
           </inspectorMemento>
           <node node_ref="r:81b04a6b-d84d-4d20-9c97-0cd9546e0269(SoundLn.editor)/6016020811980090209" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://SoundSol/SoundSol.mod/soundRecordingSolution">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
+          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretX" value="89" />
+                <property name="caretXRelative" value="0" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="Constant_z0m96w_e0">
+                  <node node_reference="r:aa676b1f-632c-4ac4-8736-5d48f566aa8c(SoundSol.mod)/7082689441968339788" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:b5550555-b3bc-4782-a6c7-5f089d01e8cd(SoundLn.structure)/7082689441970667391" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+            <enabledHints />
+          </inspectorMemento>
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://SoundLn/SoundLn.structure/Sound">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
+          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretX" value="119" />
+                <property name="caretXRelative" value="40" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="name">
+                  <node node_reference="r:b5550555-b3bc-4782-a6c7-5f089d01e8cd(SoundLn.structure)/7082689441970667391" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:b5550555-b3bc-4782-a6c7-5f089d01e8cd(SoundLn.structure)/7082689441970667391" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+            <enabledHints />
+          </inspectorMemento>
+          <node node_ref="r:b5550555-b3bc-4782-a6c7-5f089d01e8cd(SoundLn.structure)/7082689441970667391" />
         </state>
       </provider>
     </entry>

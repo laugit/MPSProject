@@ -48,7 +48,6 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_Sensor;
   private ConceptPresentation props_Sensors;
   private ConceptPresentation props_SensorsAreaDefinition;
-  private ConceptPresentation props_Sound;
   private ConceptPresentation props_SoundFrequency;
   private ConceptPresentation props_SoundLevel;
   private ConceptPresentation props_SoundMatches;
@@ -342,13 +341,6 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_SensorsAreaDefinition = cpb.create();
         }
         return props_SensorsAreaDefinition;
-      case LanguageConceptSwitch.Sound:
-        if (props_Sound == null) {
-          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("Sound");
-          props_Sound = cpb.create();
-        }
-        return props_Sound;
       case LanguageConceptSwitch.SoundFrequency:
         if (props_SoundFrequency == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();

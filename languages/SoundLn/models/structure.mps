@@ -823,11 +823,6 @@
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
   </node>
-  <node concept="1TIwiD" id="69aL8mj4zXZ">
-    <property role="EcuMT" value="7082689441970667391" />
-    <property role="TrG5h" value="Sound" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-  </node>
   <node concept="1TIwiD" id="69aL8mj4zY0">
     <property role="EcuMT" value="7082689441970667392" />
     <property role="TrG5h" value="SoundFrequency" />

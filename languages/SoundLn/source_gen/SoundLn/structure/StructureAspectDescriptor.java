@@ -51,7 +51,6 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptSensor = createDescriptorForSensor();
   /*package*/ final ConceptDescriptor myConceptSensors = createDescriptorForSensors();
   /*package*/ final ConceptDescriptor myConceptSensorsAreaDefinition = createDescriptorForSensorsAreaDefinition();
-  /*package*/ final ConceptDescriptor myConceptSound = createDescriptorForSound();
   /*package*/ final ConceptDescriptor myConceptSoundFrequency = createDescriptorForSoundFrequency();
   /*package*/ final ConceptDescriptor myConceptSoundLevel = createDescriptorForSoundLevel();
   /*package*/ final ConceptDescriptor myConceptSoundMatches = createDescriptorForSoundMatches();
@@ -74,7 +73,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptAction, myConceptAlert, myConceptAllowStorage, myConceptAndBooleanExpression, myConceptArea, myConceptAverageSoundLevel, myConceptBoolFromExpression, myConceptBooleanExpression, myConceptCondition, myConceptConditional, myConceptCoordinateAreaDefinition, myConceptDataLifeTime, myConceptDataStoragePolicy, myConceptDisableStorage, myConceptDisplay, myConceptEnvironment, myConceptEqualBoolExpr, myConceptEvent, myConceptEvents, myConceptExpression, myConceptExpressions, myConceptFalse, myConceptGPSCoordinate, myConceptGeneratesEvent, myConceptGreaterBoolExpr, myConceptLowerBoolExpr, myConceptOneLineConditional, myConceptOrBooleanExpression, myConceptPolicies, myConceptPoliciesKeyWord, myConceptPosition, myConceptRadio, myConceptReaction, myConceptRecording, myConceptRule, myConceptSensibility, myConceptSensor, myConceptSensors, myConceptSensorsAreaDefinition, myConceptSound, myConceptSoundFrequency, myConceptSoundLevel, myConceptSoundMatches, myConceptSoundRecordingPolicy, myConceptSoundRecordingSolution, myConceptSoundRepetition, myConceptStorage, myConceptTrigger, myConceptTriggerWhen, myConceptTrue, myConceptType, myConceptZone, myConceptZoneKeyWord, myConceptZones);
+    return Arrays.asList(myConceptAction, myConceptAlert, myConceptAllowStorage, myConceptAndBooleanExpression, myConceptArea, myConceptAverageSoundLevel, myConceptBoolFromExpression, myConceptBooleanExpression, myConceptCondition, myConceptConditional, myConceptCoordinateAreaDefinition, myConceptDataLifeTime, myConceptDataStoragePolicy, myConceptDisableStorage, myConceptDisplay, myConceptEnvironment, myConceptEqualBoolExpr, myConceptEvent, myConceptEvents, myConceptExpression, myConceptExpressions, myConceptFalse, myConceptGPSCoordinate, myConceptGeneratesEvent, myConceptGreaterBoolExpr, myConceptLowerBoolExpr, myConceptOneLineConditional, myConceptOrBooleanExpression, myConceptPolicies, myConceptPoliciesKeyWord, myConceptPosition, myConceptRadio, myConceptReaction, myConceptRecording, myConceptRule, myConceptSensibility, myConceptSensor, myConceptSensors, myConceptSensorsAreaDefinition, myConceptSoundFrequency, myConceptSoundLevel, myConceptSoundMatches, myConceptSoundRecordingPolicy, myConceptSoundRecordingSolution, myConceptSoundRepetition, myConceptStorage, myConceptTrigger, myConceptTriggerWhen, myConceptTrue, myConceptType, myConceptZone, myConceptZoneKeyWord, myConceptZones);
   }
 
   @Override
@@ -159,8 +158,6 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
         return myConceptSensors;
       case LanguageConceptSwitch.SensorsAreaDefinition:
         return myConceptSensorsAreaDefinition;
-      case LanguageConceptSwitch.Sound:
-        return myConceptSound;
       case LanguageConceptSwitch.SoundFrequency:
         return myConceptSoundFrequency;
       case LanguageConceptSwitch.SoundLevel:
@@ -588,13 +585,6 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.prop("sensor3Name", 0x624ac48592d9a040L, "7082689441966956608");
     b.prop("sensor4Name", 0x624ac48592d9a044L, "7082689441966956612");
     b.alias("sad");
-    return b.create();
-  }
-  private static ConceptDescriptor createDescriptorForSound() {
-    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("SoundLn", "Sound", 0x1cb3be812ce745bcL, 0xb95047f9080cab09L, 0x624ac48593123f7fL);
-    b.class_(false, false, false);
-    b.origin("r:b5550555-b3bc-4782-a6c7-5f089d01e8cd(SoundLn.structure)/7082689441970667391");
-    b.version(2);
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForSoundFrequency() {

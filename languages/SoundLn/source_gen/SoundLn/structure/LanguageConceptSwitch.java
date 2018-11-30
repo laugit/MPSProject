@@ -48,21 +48,20 @@ public final class LanguageConceptSwitch {
   public static final int Sensor = 36;
   public static final int Sensors = 37;
   public static final int SensorsAreaDefinition = 38;
-  public static final int Sound = 39;
-  public static final int SoundFrequency = 40;
-  public static final int SoundLevel = 41;
-  public static final int SoundMatches = 42;
-  public static final int SoundRecordingPolicy = 43;
-  public static final int SoundRecordingSolution = 44;
-  public static final int SoundRepetition = 45;
-  public static final int Storage = 46;
-  public static final int Trigger = 47;
-  public static final int TriggerWhen = 48;
-  public static final int True = 49;
-  public static final int Type = 50;
-  public static final int Zone = 51;
-  public static final int ZoneKeyWord = 52;
-  public static final int Zones = 53;
+  public static final int SoundFrequency = 39;
+  public static final int SoundLevel = 40;
+  public static final int SoundMatches = 41;
+  public static final int SoundRecordingPolicy = 42;
+  public static final int SoundRecordingSolution = 43;
+  public static final int SoundRepetition = 44;
+  public static final int Storage = 45;
+  public static final int Trigger = 46;
+  public static final int TriggerWhen = 47;
+  public static final int True = 48;
+  public static final int Type = 49;
+  public static final int Zone = 50;
+  public static final int ZoneKeyWord = 51;
+  public static final int Zones = 52;
 
   public LanguageConceptSwitch() {
     LanguageConceptIndexBuilder builder = new LanguageConceptIndexBuilder(0x1cb3be812ce745bcL, 0xb95047f9080cab09L);
@@ -105,7 +104,6 @@ public final class LanguageConceptSwitch {
     builder.put(0x6d92a90974855a2bL, Sensor);
     builder.put(0x575aa0ff3bc7992fL, Sensors);
     builder.put(0x624ac48592d9a03aL, SensorsAreaDefinition);
-    builder.put(0x624ac48593123f7fL, Sound);
     builder.put(0x624ac48593123f80L, SoundFrequency);
     builder.put(0x624ac48593105b86L, SoundLevel);
     builder.put(0x624ac48593150e37L, SoundMatches);
