@@ -309,7 +309,7 @@
         <node concept="1GBjA_" id="69aL8mj9cTa" role="1GBjAQ">
           <node concept="3KD7Zn" id="69aL8mj9cTb" role="3KD7ZL">
             <node concept="3LmDW3" id="69aL8mj9KSv" role="3LlVck">
-              <property role="3LmDW2" value="&lt;" />
+              <property role="3LmDW2" value="&gt;" />
               <property role="3LmDWc" value="averageLevel + 10" />
             </node>
           </node>
