@@ -28,13 +28,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_EqualBoolExpr;
   private ConceptPresentation props_Event;
   private ConceptPresentation props_Events;
-  private ConceptPresentation props_Expression;
-  private ConceptPresentation props_Expressions;
   private ConceptPresentation props_False;
   private ConceptPresentation props_GPSCoordinate;
   private ConceptPresentation props_GeneratesEvent;
   private ConceptPresentation props_GreaterBoolExpr;
   private ConceptPresentation props_LowerBoolExpr;
+  private ConceptPresentation props_Macro;
+  private ConceptPresentation props_Macros;
   private ConceptPresentation props_OneLineConditional;
   private ConceptPresentation props_OrBooleanExpression;
   private ConceptPresentation props_Policies;
@@ -201,20 +201,6 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_Events = cpb.create();
         }
         return props_Events;
-      case LanguageConceptSwitch.Expression:
-        if (props_Expression == null) {
-          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("expression");
-          props_Expression = cpb.create();
-        }
-        return props_Expression;
-      case LanguageConceptSwitch.Expressions:
-        if (props_Expressions == null) {
-          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("expressions");
-          props_Expressions = cpb.create();
-        }
-        return props_Expressions;
       case LanguageConceptSwitch.False:
         if (props_False == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -250,6 +236,20 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_LowerBoolExpr = cpb.create();
         }
         return props_LowerBoolExpr;
+      case LanguageConceptSwitch.Macro:
+        if (props_Macro == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("macro");
+          props_Macro = cpb.create();
+        }
+        return props_Macro;
+      case LanguageConceptSwitch.Macros:
+        if (props_Macros == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("macros");
+          props_Macros = cpb.create();
+        }
+        return props_Macros;
       case LanguageConceptSwitch.OneLineConditional:
         if (props_OneLineConditional == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();

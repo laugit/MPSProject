@@ -457,30 +457,30 @@
   </node>
   <node concept="1TIwiD" id="5dXcKRzqvLQ">
     <property role="EcuMT" value="6016020811979816054" />
-    <property role="TrG5h" value="Expressions" />
-    <property role="34LRSv" value="expressions" />
+    <property role="TrG5h" value="Macros" />
+    <property role="34LRSv" value="macros" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="5dXcKRzqvLT" role="1TKVEi">
       <property role="IQ2ns" value="6016020811979816057" />
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="expressions" />
+      <property role="20kJfa" value="macros" />
       <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" node="5dXcKRzqvLV" resolve="Expression" />
+      <ref role="20lvS9" node="5dXcKRzqvLV" resolve="Macro" />
     </node>
   </node>
   <node concept="1TIwiD" id="5dXcKRzqvLV">
     <property role="EcuMT" value="6016020811979816059" />
-    <property role="TrG5h" value="Expression" />
-    <property role="34LRSv" value="expression" />
+    <property role="TrG5h" value="Macro" />
+    <property role="34LRSv" value="macro" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="5dXcKRzqvLW" role="1TKVEl">
       <property role="IQ2nx" value="6016020811979816060" />
-      <property role="TrG5h" value="expressionName" />
+      <property role="TrG5h" value="macroName" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
     <node concept="1TJgyi" id="5dXcKRzqvLY" role="1TKVEl">
       <property role="IQ2nx" value="6016020811979816062" />
-      <property role="TrG5h" value="expressionDefinition" />
+      <property role="TrG5h" value="macroDefinition" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
   </node>
@@ -505,7 +505,7 @@
       <property role="IQ2ns" value="7082689441966843454" />
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="expressions" />
-      <ref role="20lvS9" node="5dXcKRzqvLQ" resolve="Expressions" />
+      <ref role="20lvS9" node="5dXcKRzqvLQ" resolve="Macros" />
     </node>
     <node concept="1TJgyj" id="69aL8miPYp0" role="1TKVEi">
       <property role="IQ2ns" value="7082689441966843456" />

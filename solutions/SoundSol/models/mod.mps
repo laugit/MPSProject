@@ -22,12 +22,12 @@
       <concept id="6016020811979970852" name="SoundLn.structure.Recording" flags="ng" index="2K4mCD">
         <property id="6016020811979970854" name="type" index="2K4mCF" />
       </concept>
-      <concept id="6016020811979816059" name="SoundLn.structure.Expression" flags="ng" index="2K5cXQ">
-        <property id="6016020811979816060" name="expressionName" index="2K5cXL" />
-        <property id="6016020811979816062" name="expressionDefinition" index="2K5cXN" />
+      <concept id="6016020811979816059" name="SoundLn.structure.Macro" flags="ng" index="2K5cXQ">
+        <property id="6016020811979816060" name="macroName" index="2K5cXL" />
+        <property id="6016020811979816062" name="macroDefinition" index="2K5cXN" />
       </concept>
-      <concept id="6016020811979816054" name="SoundLn.structure.Expressions" flags="ng" index="2K5cXV">
-        <child id="6016020811979816057" name="expressions" index="2K5cXO" />
+      <concept id="6016020811979816054" name="SoundLn.structure.Macros" flags="ng" index="2K5cXV">
+        <child id="6016020811979816057" name="macros" index="2K5cXO" />
       </concept>
       <concept id="164339011489781333" name="SoundLn.structure.Conditional" flags="ng" index="3gOoWw">
         <child id="164339011489781371" name="action1" index="3gOoWe" />
@@ -153,9 +153,9 @@
   </registry>
   <node concept="3KBiaS" id="69aL8miQbjc">
     <node concept="2K5cXV" id="69aL8miQbjd" role="3KBiaV">
-      <node concept="2K5cXQ" id="69aL8miQbjr" role="2K5cXO">
+      <node concept="2K5cXQ" id="10l$khYjI$s" role="2K5cXO">
         <property role="2K5cXL" value="onWeekDay()" />
-        <property role="2K5cXN" value="Day in {monday,tuesday,wednesday,thursday,friday}" />
+        <property role="2K5cXN" value="today is in {monday,tuesday,wednesday,thursday,friday}" />
       </node>
       <node concept="2K5cXQ" id="69aL8miQbjt" role="2K5cXO">
         <property role="2K5cXL" value="onMission()" />

@@ -31,13 +31,13 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptEqualBoolExpr = createDescriptorForEqualBoolExpr();
   /*package*/ final ConceptDescriptor myConceptEvent = createDescriptorForEvent();
   /*package*/ final ConceptDescriptor myConceptEvents = createDescriptorForEvents();
-  /*package*/ final ConceptDescriptor myConceptExpression = createDescriptorForExpression();
-  /*package*/ final ConceptDescriptor myConceptExpressions = createDescriptorForExpressions();
   /*package*/ final ConceptDescriptor myConceptFalse = createDescriptorForFalse();
   /*package*/ final ConceptDescriptor myConceptGPSCoordinate = createDescriptorForGPSCoordinate();
   /*package*/ final ConceptDescriptor myConceptGeneratesEvent = createDescriptorForGeneratesEvent();
   /*package*/ final ConceptDescriptor myConceptGreaterBoolExpr = createDescriptorForGreaterBoolExpr();
   /*package*/ final ConceptDescriptor myConceptLowerBoolExpr = createDescriptorForLowerBoolExpr();
+  /*package*/ final ConceptDescriptor myConceptMacro = createDescriptorForMacro();
+  /*package*/ final ConceptDescriptor myConceptMacros = createDescriptorForMacros();
   /*package*/ final ConceptDescriptor myConceptOneLineConditional = createDescriptorForOneLineConditional();
   /*package*/ final ConceptDescriptor myConceptOrBooleanExpression = createDescriptorForOrBooleanExpression();
   /*package*/ final ConceptDescriptor myConceptPolicies = createDescriptorForPolicies();
@@ -73,7 +73,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptAction, myConceptAlert, myConceptAllowStorage, myConceptAndBooleanExpression, myConceptArea, myConceptAverageSoundLevel, myConceptBoolFromExpression, myConceptBooleanExpression, myConceptCondition, myConceptConditional, myConceptCoordinateAreaDefinition, myConceptDataLifeTime, myConceptDataStoragePolicy, myConceptDisableStorage, myConceptDisplay, myConceptEnvironment, myConceptEqualBoolExpr, myConceptEvent, myConceptEvents, myConceptExpression, myConceptExpressions, myConceptFalse, myConceptGPSCoordinate, myConceptGeneratesEvent, myConceptGreaterBoolExpr, myConceptLowerBoolExpr, myConceptOneLineConditional, myConceptOrBooleanExpression, myConceptPolicies, myConceptPoliciesKeyWord, myConceptPosition, myConceptRadio, myConceptReaction, myConceptRecording, myConceptRule, myConceptSensibility, myConceptSensor, myConceptSensors, myConceptSensorsAreaDefinition, myConceptSoundFrequency, myConceptSoundLevel, myConceptSoundMatches, myConceptSoundRecordingPolicy, myConceptSoundRecordingSolution, myConceptSoundRepetition, myConceptStorage, myConceptTrigger, myConceptTriggerWhen, myConceptTrue, myConceptType, myConceptZone, myConceptZoneKeyWord, myConceptZones);
+    return Arrays.asList(myConceptAction, myConceptAlert, myConceptAllowStorage, myConceptAndBooleanExpression, myConceptArea, myConceptAverageSoundLevel, myConceptBoolFromExpression, myConceptBooleanExpression, myConceptCondition, myConceptConditional, myConceptCoordinateAreaDefinition, myConceptDataLifeTime, myConceptDataStoragePolicy, myConceptDisableStorage, myConceptDisplay, myConceptEnvironment, myConceptEqualBoolExpr, myConceptEvent, myConceptEvents, myConceptFalse, myConceptGPSCoordinate, myConceptGeneratesEvent, myConceptGreaterBoolExpr, myConceptLowerBoolExpr, myConceptMacro, myConceptMacros, myConceptOneLineConditional, myConceptOrBooleanExpression, myConceptPolicies, myConceptPoliciesKeyWord, myConceptPosition, myConceptRadio, myConceptReaction, myConceptRecording, myConceptRule, myConceptSensibility, myConceptSensor, myConceptSensors, myConceptSensorsAreaDefinition, myConceptSoundFrequency, myConceptSoundLevel, myConceptSoundMatches, myConceptSoundRecordingPolicy, myConceptSoundRecordingSolution, myConceptSoundRepetition, myConceptStorage, myConceptTrigger, myConceptTriggerWhen, myConceptTrue, myConceptType, myConceptZone, myConceptZoneKeyWord, myConceptZones);
   }
 
   @Override
@@ -118,10 +118,6 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
         return myConceptEvent;
       case LanguageConceptSwitch.Events:
         return myConceptEvents;
-      case LanguageConceptSwitch.Expression:
-        return myConceptExpression;
-      case LanguageConceptSwitch.Expressions:
-        return myConceptExpressions;
       case LanguageConceptSwitch.False:
         return myConceptFalse;
       case LanguageConceptSwitch.GPSCoordinate:
@@ -132,6 +128,10 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
         return myConceptGreaterBoolExpr;
       case LanguageConceptSwitch.LowerBoolExpr:
         return myConceptLowerBoolExpr;
+      case LanguageConceptSwitch.Macro:
+        return myConceptMacro;
+      case LanguageConceptSwitch.Macros:
+        return myConceptMacros;
       case LanguageConceptSwitch.OneLineConditional:
         return myConceptOneLineConditional;
       case LanguageConceptSwitch.OrBooleanExpression:
@@ -383,25 +383,6 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.alias("events");
     return b.create();
   }
-  private static ConceptDescriptor createDescriptorForExpression() {
-    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("SoundLn", "Expression", 0x1cb3be812ce745bcL, 0xb95047f9080cab09L, 0x537d330de369fc7bL);
-    b.class_(false, false, false);
-    b.origin("r:b5550555-b3bc-4782-a6c7-5f089d01e8cd(SoundLn.structure)/6016020811979816059");
-    b.version(2);
-    b.prop("expressionName", 0x537d330de369fc7cL, "6016020811979816060");
-    b.prop("expressionDefinition", 0x537d330de369fc7eL, "6016020811979816062");
-    b.alias("expression");
-    return b.create();
-  }
-  private static ConceptDescriptor createDescriptorForExpressions() {
-    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("SoundLn", "Expressions", 0x1cb3be812ce745bcL, 0xb95047f9080cab09L, 0x537d330de369fc76L);
-    b.class_(false, false, false);
-    b.origin("r:b5550555-b3bc-4782-a6c7-5f089d01e8cd(SoundLn.structure)/6016020811979816054");
-    b.version(2);
-    b.aggregate("expressions", 0x537d330de369fc79L).target(0x1cb3be812ce745bcL, 0xb95047f9080cab09L, 0x537d330de369fc7bL).optional(true).ordered(true).multiple(true).origin("6016020811979816057").done();
-    b.alias("expressions");
-    return b.create();
-  }
   private static ConceptDescriptor createDescriptorForFalse() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("SoundLn", "False", 0x1cb3be812ce745bcL, 0xb95047f9080cab09L, 0x624ac48593189738L);
     b.class_(false, false, false);
@@ -451,6 +432,25 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.prop("greaterExpr", 0x624ac48593105a5eL, "7082689441970543198");
     b.prop("lowerExpr", 0x624ac48593105a60L, "7082689441970543200");
     b.alias("lower");
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForMacro() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("SoundLn", "Macro", 0x1cb3be812ce745bcL, 0xb95047f9080cab09L, 0x537d330de369fc7bL);
+    b.class_(false, false, false);
+    b.origin("r:b5550555-b3bc-4782-a6c7-5f089d01e8cd(SoundLn.structure)/6016020811979816059");
+    b.version(2);
+    b.prop("macroName", 0x537d330de369fc7cL, "6016020811979816060");
+    b.prop("macroDefinition", 0x537d330de369fc7eL, "6016020811979816062");
+    b.alias("macro");
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForMacros() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("SoundLn", "Macros", 0x1cb3be812ce745bcL, 0xb95047f9080cab09L, 0x537d330de369fc76L);
+    b.class_(false, false, false);
+    b.origin("r:b5550555-b3bc-4782-a6c7-5f089d01e8cd(SoundLn.structure)/6016020811979816054");
+    b.version(2);
+    b.aggregate("macros", 0x537d330de369fc79L).target(0x1cb3be812ce745bcL, 0xb95047f9080cab09L, 0x537d330de369fc7bL).optional(true).ordered(true).multiple(true).origin("6016020811979816057").done();
+    b.alias("macros");
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForOneLineConditional() {

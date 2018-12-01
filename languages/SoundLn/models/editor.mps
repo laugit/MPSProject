@@ -378,26 +378,29 @@
     </node>
   </node>
   <node concept="24kQdi" id="5dXcKRzqvM9">
-    <ref role="1XX52x" to="6lg2:5dXcKRzqvLV" resolve="Expression" />
+    <ref role="1XX52x" to="6lg2:5dXcKRzqvLV" resolve="Macro" />
     <node concept="3EZMnI" id="5dXcKRzqvMb" role="2wV5jI">
+      <node concept="3F0ifn" id="10l$khYiJmG" role="3EZMnx">
+        <property role="3F0ifm" value="macro" />
+      </node>
       <node concept="3F0A7n" id="5dXcKRzqvMl" role="3EZMnx">
-        <ref role="1NtTu8" to="6lg2:5dXcKRzqvLW" resolve="expressionName" />
+        <ref role="1NtTu8" to="6lg2:5dXcKRzqvLW" resolve="macroName" />
       </node>
       <node concept="l2Vlx" id="5dXcKRzqvMe" role="2iSdaV" />
       <node concept="3F0ifn" id="5dXcKRzqvMH" role="3EZMnx">
-        <property role="3F0ifm" value="=" />
+        <property role="3F0ifm" value="means" />
       </node>
       <node concept="3F0A7n" id="5dXcKRzqvMC" role="3EZMnx">
-        <ref role="1NtTu8" to="6lg2:5dXcKRzqvLY" resolve="expressionDefinition" />
+        <ref role="1NtTu8" to="6lg2:5dXcKRzqvLY" resolve="macroDefinition" />
       </node>
     </node>
   </node>
   <node concept="24kQdi" id="5dXcKRzqS75">
-    <ref role="1XX52x" to="6lg2:5dXcKRzqvLQ" resolve="Expressions" />
+    <ref role="1XX52x" to="6lg2:5dXcKRzqvLQ" resolve="Macros" />
     <node concept="3EZMnI" id="5dXcKRzqS7e" role="2wV5jI">
       <node concept="l2Vlx" id="5dXcKRzqS7f" role="2iSdaV" />
       <node concept="3F0ifn" id="5dXcKRzqS7g" role="3EZMnx">
-        <property role="3F0ifm" value="expressions" />
+        <property role="3F0ifm" value="macros" />
       </node>
       <node concept="3F0ifn" id="5dXcKRzqS7h" role="3EZMnx">
         <property role="3F0ifm" value="{" />
@@ -414,7 +417,7 @@
           <property role="VOm3f" value="true" />
         </node>
         <node concept="3F2HdR" id="5dXcKRzqS7r" role="3EZMnx">
-          <ref role="1NtTu8" to="6lg2:5dXcKRzqvLT" resolve="expressions" />
+          <ref role="1NtTu8" to="6lg2:5dXcKRzqvLT" resolve="macros" />
           <node concept="l2Vlx" id="5dXcKRzqS7s" role="2czzBx" />
           <node concept="pj6Ft" id="5dXcKRzqS7t" role="3F10Kt">
             <property role="VOm3f" value="true" />
@@ -2184,24 +2187,36 @@
         <property role="3F0ifm" value="alert" />
       </node>
       <node concept="3F0ifn" id="69aL8miWDHC" role="3EZMnx">
-        <property role="3F0ifm" value="(" />
-      </node>
-      <node concept="3F0A7n" id="69aL8miWDHP" role="3EZMnx">
-        <ref role="1NtTu8" to="6lg2:69aL8miWDHf" resolve="personToAlert" />
-      </node>
-      <node concept="3F0ifn" id="69aL8miWDI5" role="3EZMnx">
-        <property role="3F0ifm" value=")" />
-        <node concept="ljvvj" id="69aL8miWZLj" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
+        <property role="3F0ifm" value="{" />
       </node>
       <node concept="3F0ifn" id="69aL8miWZLs" role="3EZMnx">
-        <property role="3F0ifm" value="alert type" />
+        <property role="3F0ifm" value="who" />
+        <node concept="pVoyu" id="69aL8mjf$wk" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="lj46D" id="69aL8mjf$wm" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
       </node>
       <node concept="3F0ifn" id="69aL8miWZLG" role="3EZMnx">
         <property role="3F0ifm" value="=" />
       </node>
       <node concept="3F0A7n" id="69aL8miWZM8" role="3EZMnx">
+        <ref role="1NtTu8" to="6lg2:69aL8miWDHf" resolve="personToAlert" />
+      </node>
+      <node concept="3F0ifn" id="69aL8mjf$wB" role="3EZMnx">
+        <property role="3F0ifm" value="by" />
+        <node concept="pVoyu" id="69aL8mjf$wN" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="lj46D" id="69aL8mjf$wP" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="69aL8mjf$x4" role="3EZMnx">
+        <property role="3F0ifm" value="=" />
+      </node>
+      <node concept="3F0A7n" id="69aL8mjf$xG" role="3EZMnx">
         <ref role="1NtTu8" to="6lg2:69aL8miWZLg" resolve="alertType" />
       </node>
       <node concept="l2Vlx" id="69aL8miWDHu" role="2iSdaV" />
